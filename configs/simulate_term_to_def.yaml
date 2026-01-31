@@ -1,0 +1,12 @@
+input:
+  rich_path: "staging_data/admin_multi_term/admin_pairs_term_to_def.rich.jsonl"
+
+simulation:
+  sim_id: "sim_0001_term_to_def"
+  n_iters: 4
+  initial_ratio: 0.6
+  shuffle: true
+  seed: 42
+
+output:
+  out_dir: "staging_data/simulations"

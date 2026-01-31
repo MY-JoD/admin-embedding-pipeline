@@ -1,0 +1,24 @@
+hf:
+  dataset_name: "baconnier/administration_multi-term-dataset"
+  subset: null
+  split: "train"
+
+output:
+  out_dir: "staging_data/admin_multi_term"
+  prefix: "admin"
+
+preprocess:
+  shuffle: false
+  seed: 42
+  max_rows: null           # ex: 20000 pour test rapide
+
+  # filtres simples (tu peux les ajuster)
+  min_prompt_len: 10
+  min_term_len: 2
+  min_def_len: 10
+
+  # si true: supprime doublons exacts (query, positive)
+  dedupe_pairs: true
+
+formatting:
+  prompt_term_separator: "\n\nTerme: "

@@ -1,0 +1,19 @@
+hf:
+  dataset_name: "NOM/DU_DATASET"
+  subset: null          # ex: "default" ou "fr" selon dataset, sinon null
+  split: "train"
+
+mapping:
+  query_col: "query"        # colonne source dans HF
+  positive_col: "positive"  # colonne source dans HF
+
+preprocess:
+  shuffle: true
+  seed: 42
+  max_samples: null         # ex: 50000 pour limiter
+  min_query_len: 1
+  min_positive_len: 1
+
+output:
+  output_dir: "staging_data/exp_0001_solon_pair"
+  filename: "initial.jsonl"

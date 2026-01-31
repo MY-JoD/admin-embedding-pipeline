@@ -1,0 +1,97 @@
+# =========================
+# IDENTITÉ EXPÉRIENCE
+# =========================
+exp_id: exp_0001_solon_pair
+description: "Fine-tuning incrémental d'un modèle Solon embeddings (pair positive) avec LoRA."
+
+# =========================
+# MODÈLE
+# =========================
+model:
+  base_model_ref: "OrdalieTech/Solon-embeddings-large-0.1"   # adapte au nom exact HF ou chemin local
+  tokenizer_ref: null
+  strategy: "chain"                            # incrémental via dernier adapter
+  precision: "bf16"
+  device: "cuda"
+
+# =========================
+# TÂCHE EMBEDDING
+# =========================
+task:
+  type: "embedding"
+  format: "pair"                               # pair positive
+  text_fields:
+    query: "query"
+    positive: "positive"
+
+
+ui:
+  asset_dir: "experiments/{exp_id}/assets_ui"
+
+feeder:
+  enabled: true
+  provider: "simulation"          # simulation | ui_upload | manual
+  max_iterations: 4               # iter01..iter04 après initial
+  batch_filename: "batch.jsonl"
+
+  simulation:
+    sim_id: "sim_0001_term_to_def"
+    root_dir: "staging_data/simulations"
+    copy_ui_once: true
+
+# =========================
+# DONNÉES
+# =========================
+data:
+  incoming_dir: "data_sources/exp_0001_solon_pair/incoming"
+  canonical_format: "jsonl"
+  policy: "delta_plus_replay"                  # incrémental stable
+  replay_ratio: 0.2
+  seed: 42
+
+# =========================
+# ENTRAÎNEMENT
+# =========================
+training:
+  epochs: 1
+  learning_rate: 2.0e-4
+  batch_size: 16
+  grad_accum_steps: 1
+  warmup_ratio: 0.05
+  max_seq_length: 256
+  eval:
+    enabled: true
+    split_ratio: 0.05
+
+# =========================
+# LORA
+# =========================
+lora:
+  enabled: true
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+  bias: "none"
+
+# =========================
+# TRACKING
+# =========================
+tracking:
+  local:
+    enabled: true
+  wandb:
+    enabled: false
+
+# =========================
+# RUNTIME
+# =========================
+runtime:
+  resume_if_interrupted: true
+
+
+
