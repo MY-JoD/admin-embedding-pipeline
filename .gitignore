@@ -12,5 +12,6 @@ env/
 .idea/
 
 model_staging/
+staging_data/
 
 old_infos/
