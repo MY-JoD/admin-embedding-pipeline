@@ -1,0 +1,20 @@
+# --- Cœur du Machine Learning ---
+torch
+transformers
+peft
+sentence-transformers
+datasets
+
+# --- Manipulation de Données ---
+pandas
+numpy
+openpyxl
+
+# --- Outils Pipeline & Config ---
+pyyaml
+tqdm
+
+# --- Tracking & Visualisation (Optionnel mais recommandé) ---
+wandb
+matplotlib
+ipykernel
