@@ -1,0 +1,44 @@
+schema_version: '1.0'
+run_id: run_0001_2026-01-27_041950
+exp_id: exp_0001_solon_pair
+created_at: '2026-01-27T04:19:50Z'
+dry_run: true
+inputs:
+  parent_model_ref: OrdalieTech/Solon-embeddings-large-0.1
+  train_snapshot_ids: []
+  eval_snapshot_ids: []
+task:
+  type: embedding
+  format: pair
+  text_fields:
+    query: query
+    positive: positive
+training:
+  epochs: 1
+  learning_rate: 0.0002
+  batch_size: 16
+  grad_accum_steps: 1
+  warmup_ratio: 0.05
+  max_seq_length: 256
+  eval:
+    enabled: true
+    split_ratio: 0.05
+lora:
+  enabled: true
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules:
+  - q_proj
+  - k_proj
+  - v_proj
+  - o_proj
+  bias: none
+tracking:
+  local:
+    enabled: true
+  wandb:
+    enabled: false
+artifacts:
+  run_dir: experiments\exp_0001_solon_pair\runs\run_0001_2026-01-27_041950
+  artifacts_dir: experiments\exp_0001_solon_pair\runs\run_0001_2026-01-27_041950\artifacts

@@ -1,0 +1,524 @@
+{"query": "licitation", "positive": "Processus d'invitation des entreprises à soumettre des offres pour un contrat ou un marché public"}
+{"query": "correctionnellement", "positive": "Se dit d'une action ou d'une décision liée au système pénitentiaire ou à la justice pénale."}
+{"query": "acte notarié", "positive": "Document officiel rédigé par un notaire"}
+{"query": "éluder", "positive": "Éviter délibérément de répondre ou de faire face à quelque chose, souvent en contournant ou en cachant la vérité."}
+{"query": "contractuel", "positive": "Se rapportant à un contrat, c'est-à-dire un accord écrit et légal entre deux parties."}
+{"query": "municipalité", "positive": "C'est une entité administrative qui gère les affaires locales d'une ville ou d'un village donné."}
+{"query": "dépassé", "positive": "Qui n'est plus en usage, qui n'est plus à la mode."}
+{"query": "recouvrement", "positive": "Le 'recouvrement' est une action administrative qui consiste à récupérer une dette ou une créance impayée."}
+{"query": "exorbitant", "positive": "Signifiant beaucoup plus élevé, cher ou important que la normale"}
+{"query": "anonyme", "positive": "sans nom, sans identification personnelle"}
+{"query": "moyennant", "positive": "En échange de, en contrepartie de."}
+{"query": "personne morale en instance de radiation", "positive": "Une entité juridique (comme une entreprise ou une association) qui est en cours de suppression des registres officiels."}
+{"query": "primordiale", "positive": "Très importante, essentielle"}
+{"query": "cesser", "positive": "Arrêter, mettre fin à une action ou une situation"}
+{"query": "AFEAMA", "positive": "L'AFEAMA est une aide financière versée par la CAF (Caisse d'Allocations Familiales) pour prendre en charge une partie des frais de garde d'un enfant de moins de 6 ans, hors du domicile des parents."}
+{"query": "postérieurement", "positive": "Après un événement ou une action dans le temps"}
+{"query": "classement", "positive": "Action de ranger des documents ou des informations par ordre ou catégorie"}
+{"query": "occurrence", "positive": "Un événement ou une situation qui se produit"}
+{"query": "DRAF", "positive": "Direction Régionale de l'Alimentation, de l'Agriculture et de la Forêt, un service déconcentré de l'Etat français chargé de la mise en œuvre des politiques publiques dans les domaines de l'agriculture, de l'alimentation, de la forêt et des territoires"}
+{"query": "clos", "positive": "signifiant que quelque chose est terminé ou a une date limite stricte"}
+{"query": "collecteur", "positive": "Un outil ou un mécanisme qui rassemble et regroupe des informations ou des données."}
+{"query": "fermage", "positive": "Le fermage est un contrat de location d'un terrain agricole, où le locataire (fermier) s'engage à payer un loyer au propriétaire (fermier) en échange de la possibilité de cultiver et d'utiliser la terre."}
+{"query": "délictueux", "positive": "Se dit d'un acte ou d'une situation contraire à la loi ou aux règlements en vigueur."}
+{"query": "pétition", "positive": "demande formelle adressée à une autorité ou à une institution, signée par un grand nombre de personnes"}
+{"query": "cohéritier", "positive": "Une personne qui hérite avec d'autres personnes la même chose dans une succession."}
+{"query": "arrêt", "positive": "Une suspension ou une interruption temporaire ou permanente d'une activité, d'un service ou d'un processus."}
+{"query": "rétrocession", "positive": "L'action de céder, de remettre ou de restituer quelque chose à quelqu'un, généralement dans un contexte administratif."}
+{"query": "décédé", "positive": "Une personne qui est décédée fait référence à quelqu'un qui est mort."}
+{"query": "donataire", "positive": "Une personne physique ou morale qui reçoit un don ou un legs."}
+{"query": "guère", "positive": "Peu, pas beaucoup, à peine."}
+{"query": "désignation", "positive": "Action de nommer ou d'identifier quelque chose ou quelqu'un"}
+{"query": "scolarité", "positive": "Période pendant laquelle un étudiant suit des études dans un établissement d'enseignement."}
+{"query": "assermenté", "positive": "Un document ou une personne assermentée est une personne ou un document qui a prêté serment pour confirmer la véracité et l'exactitude de ce qu'il contient ou de ce qu'il déclare."}
+{"query": "défaillant", "positive": "Se dit d'une chose ou d'une personne qui ne fonctionne pas correctement ou qui n'est pas apte à remplir ses fonctions."}
+{"query": "ponctuelle", "positive": "Se dit d'un événement qui survient à un moment précis et déterminé."}
+{"query": "libéralité", "positive": "Un acte généreux et désintéressé, comme un don ou une donation, faisant bénéficier une personne ou une organisation"}
+{"query": "prématurément", "positive": "Fait de se produire avant le moment normal ou prévu"}
+{"query": "ci-annexée", "positive": "Se dit d'un document ou d'un élément qui est joint à un autre document officiel."}
+{"query": "promesse unilatérale", "positive": "Un engagement pris par une seule partie, qui peut être rendu contraignant en activant une option spécifique."}
+{"query": "ci-joint", "positive": "Un terme utilisé pour faire référence à des documents ou des pièces jointes qui accompagnent un document officiel."}
+{"query": "provisionner", "positive": "Préparer et mettre de côté des ressources ou des fonds nécessaires pour une utilisation future."}
+{"query": "oblitération", "positive": "Action d'annuler la validité d'un timbre ou d'un document en apposant un cachet ou un signe distinctif."}
+{"query": "capitis deminutio", "positive": "Perte de droits civiques ou de statut social important"}
+{"query": "se  concerter", "positive": "discuter (pour se mettre d’accord)"}
+{"query": "ARH", "positive": "Abréviation pour 'Aide au Retour à Domicile', un service d'accompagnement pour les personnes rentrant chez elles après une hospitalisation."}
+{"query": "disposée", "positive": "Prête à être utilisée ou mise en œuvre."}
+{"query": "remédier", "positive": "Corriger ou arranger une situation problématique ou un problème donné"}
+{"query": "dévolu", "positive": "Attribué ou assigné à quelqu'un ou à quelque chose en particulier."}
+{"query": "carrossable", "positive": "Se dit d'un chemin ou d'une surface pouvant être emprunté par un véhicule."}
+{"query": "indemnisation", "positive": "Le remboursement d'une perte ou d'un préjudice subi par quelqu'un."}
+{"query": "contrepartie", "positive": "L'entité, la personne ou l'organisation qui est directement concernée ou qui a un rôle équivalent dans une transaction, un accord ou une relation"}
+{"query": "spontané", "positive": "Qui se produit de manière naturelle, sans intervention extérieure ou planification."}
+{"query": "ARTT", "positive": "ARTT est un acronyme pour Aménagement et Réduction du Temps de Travail. C'est un dispositif légal en France qui permet de réorganiser le temps de travail des employés pour améliorer leur équilibre entre vie professionnelle et vie personnelle."}
+{"query": "enrayer", "positive": "empêcher, bloquer, arrêter"}
+{"query": "déclarant", "positive": "Une personne ou une entité qui fournit des informations officielles à une autorité administrative."}
+{"query": "acte notarié", "positive": "Document rédigé par un notaire, officier public qui authentifie les actes et contrats."}
+{"query": "s’attacher", "positive": "Se concentrer sur ou se consacrer à une tâche ou un objectif"}
+{"query": "infructueux", "positive": "Se dit d'une action, d'une démarche ou d'une procédure qui n'a pas abouti, qui a échoué."}
+{"query": "revenu", "positive": "L'argent que l'on gagne grâce à son travail, ses investissements ou d'autres sources."}
+{"query": "huissier", "positive": "Une personne ayant le pouvoir de faire respecter la loi et les décisions de justice, souvent envoyée pour servir des documents judiciaires ou exécuter des ordonnances du tribunal."}
+{"query": "un agent de sécurité", "positive": "Une personne employée pour protéger des biens ou des personnes, et maintenir l'ordre et la sécurité"}
+{"query": "interruption", "positive": "une pause ou une cessation temporaire dans une activité ou un service"}
+{"query": "calomnier", "positive": "Accuser quelqu'un de choses fausses pour nuire à sa réputation"}
+{"query": "se méprendre", "positive": "Faire une erreur en prenant quelque chose ou quelqu'un pour quelqu'un ou quelque chose d'autre"}
+{"query": "ponctué", "positive": "Se dit d'un événement qui survient à un moment précis et déterminé."}
+{"query": "endépitde", "positive": "Malgré une situation ou un événement qui pourrait affecter négativement une décision ou un processus"}
+{"query": "impartir", "positive": "Attribuer, assigner ou déléguer une tâche ou une responsabilité à quelqu'un."}
+{"query": "bilatérale", "positive": "Qui implique deux parties ou pays, et qui est réciproque ou mutuellement bénéfique."}
+{"query": "occasionnelle", "positive": "Qui arrive de manière exceptionnelle ou ponctuelle."}
+{"query": "pareil", "positive": "Qui est exactement pareil, qui a la même valeur ou qui présente les mêmes caractéristiques"}
+{"query": "assignee", "positive": "Personne responsable d'accomplir une tâche ou de remplir une obligation dans un processus administratif"}
+{"query": "capacité", "positive": "La capacité fait référence à la quantité maximale de charges ou de tâches qu'un service administratif peut gérer à un moment donné."}
+{"query": "tenue", "positive": "En français administratif, la 'tenue' fait référence à l'ensemble des registres, livres ou documents relatifs à la gestion d'une affaire, d'un service ou d'une organisation."}
+{"query": "réfuter", "positive": "Dans un contexte administratif, 'réfuter' signifie rejeter ou ne pas accepter une demande, une proposition ou une requête."}
+{"query": "acquis communautaire", "positive": "Ensemble des lois et règlements créés par l'Union européenne, qui sont juridiquement obligatoires pour tous les États membres."}
+{"query": "concomitamment", "positive": "Se dit de deux événements, actions ou circonstances qui se produisent en même temps."}
+{"query": "demande de pièces justificatives", "positive": "C'est une demande officielle d'envoyer des documents pour prouver ou vérifier des informations fournies dans une demande ou une requête."}
+{"query": "lucrativité", "positive": "La lucrativité est la capacité d'une entreprise ou d'une activité à générer des bénéfices ou des profits."}
+{"query": "récriminer", "positive": "Exprimer son mécontentement ou son désaccord d'une manière forte et claire."}
+{"query": "cédante", "positive": "Dans un contexte administratif, la partie qui transfère un droit ou un bien à une autre partie est appelée la 'cédante'."}
+{"query": "hebdomadairement", "positive": "Signifie quelque chose qui se produit une fois par semaine."}
+{"query": "dossier en instance", "positive": "Un dossier en instance est un dossier qui n'a pas été traité ou qui est en attente de traitement dans un service administratif."}
+{"query": "acquitter", "positive": "Marquer une débite ou une obligation comme payée ou remplie."}
+{"query": "affectiosocietatis", "positive": "Une notion juridique qui décrit les liens personnels et affectifs entre les associés d'une société."}
+{"query": "acceptance", "positive": "L'action ou la décision d'accepter, de convenir ou d'admettre quelque chose dans un cadre administratif."}
+{"query": "réitération", "positive": "Action de répéter une action ou une procédure."}
+{"query": "révéler", "positive": "Montrer ou faire connaître quelque chose qui était caché ou secret."}
+{"query": "expertise médico-légale", "positive": "Évaluation médicale effectuée dans le but de déterminer les causes et les circonstances d'un événement, souvent lié à une enquête judiciaire."}
+{"query": "modeste", "positive": "Qui ne demande ni ne revendique beaucoup ; qui est simple et sans prétention"}
+{"query": "droit de précédent", "positive": "Principe selon lequel une décision antérieure crée une obligation ou un exemple à suivre pour des cas similaires futurs."}
+{"query": "immobilisation", "positive": "Un actif qui n'est pas destiné à être utilisé ou consommé dans le cycle d'exploitation normal d'une entreprise, mais qui est plutôt utilisé dans le processus de production ou pour fournir des services."}
+{"query": "complicité", "positive": "La complicité, c'est lorsque deux personnes ou plus sont d'accord pour commettre une action illégale ou malhonnête."}
+{"query": "législative", "positive": "Se rapportant à l'ensemble des lois et règlements en vigueur dans un pays ou une région donnée."}
+{"query": "copie", "positive": "Une copie est une reproduction exacte d'un document ou d'un élément."}
+{"query": "engendrer", "positive": "Signifie causer ou provoquer quelqueque chose."}
+{"query": "document invalide", "positive": "Un document invalide est un document qui ne peut pas être accepté ou traité car il ne respecte pas les règles ou les exigences nécessaires."}
+{"query": "pondérer", "positive": "Prendre en compte différents éléments dans une décision, en leur accordant une importance ou une valeur relative."}
+{"query": "greffière", "positive": "Une greffière est une fonctionnaire qui travaille dans l'administration judiciaire et qui est responsable de la gestion des dossiers et des procédures."}
+{"query": "extrader", "positive": "Faire sortir une personne d'un pays pour qu'elle soit jugée dans un autre pays"}
+{"query": "promulgation", "positive": "Action d'officialiser une loi ou un règlement pour qu'il entre en vigueur."}
+{"query": "inéligibilité", "positive": "L'inéligibilité est un statut qui empêche une personne de participé ou de bénéficier de certains droits ou privilèges dans un contexte administratif."}
+{"query": "compensation", "positive": "Action de rembourser ou dédommager une personne pour un préjudice ou un dommage subi"}
+{"query": "anonyme", "positive": "Sans nom, sans identification personnelle."}
+{"query": "interdépartementaux", "positive": "Se dit de quelque chose qui concerne ou qui implique plusieurs départements."}
+{"query": "ARAC", "positive": "Le guichet unique pour les demandes de permis de construire et d'autres autorisations relatives à l'aménagement urbain."}
+{"query": "obturer", "positive": "Fermer hermétiquement un trou ou une ouverture pour empêcher quelque chose de passer."}
+{"query": "induire", "positive": "Faire en sorte que quelque chose arrive, en particulier en influençant les pensées ou les actions de quelqu'un."}
+{"query": "se dédire", "positive": "changer d’avis après avoir passé un contrat ou pris un engagement"}
+{"query": "restitution", "positive": "action de rendre ou de remettre quelque chose à quelqu'un"}
+{"query": "consentement", "positive": "Accord explicite donné par une personne pour qu'une action ou un traitement spécifique soit effectué."}
+{"query": "résolution", "positive": "Une décision ou un plan d'action décidé pour traiter et régler une situation ou un problème donné."}
+{"query": "sus(-)rappelé", "positive": "signifie qu'une décision ou une action a été réexaminée et modifiée"}
+{"query": "se dédire", "positive": "Faire une promesse ou prendre un engagement, puis les révoquer ou les annuler."}
+{"query": "caducité", "positive": "Caducité signifie la fin de la validité ou de l'application d'un texte, d'un règlement ou d'une décision administrative."}
+{"query": "CTP", "positive": "Le CTP, ou Compte de Tiers Payant, est un compte utilisé dans l'administration française pour gérer les paiements effectués par un tiers au nom d'un bénéficiaire."}
+{"query": "arpenteur", "positive": "Une persone qualifiée pour mesurer et dessiner des terrains, des bâtiments et des frontières."}
+{"query": "co(-)propriétaire", "positive": "Une personne qui partage la propriété et les responsabilités d'une chose (comme un immeuble) avec une ou plusieurs autres personnes"}
+{"query": "intérim", "positive": "Période temporaire pendant laquelle une personne remplace quelqu'un dans une fonction ou un poste, en attendant qu'une décision définitive soit prise ou qu'une personne soit nommée de manière permanente."}
+{"query": "riverain", "positive": "Une personne qui habite près d'un cours d'eau ou d'une frontière."}
+{"query": "ad hominem", "positive": "Attaque personnelle, qui consiste à décréditer une personne en attaquant sa caractère ou sa réputation plutôt que de réfuter ses arguments ou idées."}
+{"query": "précédent", "positive": "Qui a eu lieu ou qui a existé avant le moment présent."}
+{"query": "en suspens", "positive": "signifiant que quelque chose est en attente ou non résolu"}
+{"query": "CNI", "positive": "La Carte Nationale d'Identité est un document officiel français qui permet de prouver son identité et sa nationalité française."}
+{"query": "antinomie", "positive": "Situation où deux lois, règles ou principes s'opposent et sont incompatibles entre eux."}
+{"query": "negotiorum gestio", "positive": "Il s'agit d'une situation où une personne gère les affaires d'une autre personne, sans y être autorisée officiellement, dans l'intérêt de cette dernière."}
+{"query": "prématurée", "positive": "Qui arrive ou qui est fait avant le temps normal ou prévu."}
+{"query": "se départir", "positive": "Abandonner une attitude, une habitude, un droit, etc."}
+{"query": "CAM", "positive": "Le Centre d'Accueil et de Monnaie (CAM) est un bureau où l'on peut effectuer diverses opérations liées aux prestations sociales et à la monnaie."}
+{"query": "naturalisation", "positive": "Devenir citoyen français en faisant une demande et en remplissant certaines conditions"}
+{"query": "périmée", "positive": "Qui n'est plus valable ou utilisable parce qu'elle est trop vieille ou dépassée."}
+{"query": "frauduleux", "positive": "Se dit d'une action, d'un document ou d'un comportement qui vise à tricher, souvent dans le but d'obtenir quelque chose illégalement."}
+{"query": "assumer", "positive": "Prendre la responsabilité ou accepter les conséquences de quelque chose."}
+{"query": "intimé", "positive": "Personne à qui une décision de justice ou un acte juridique est adressée."}
+{"query": "quantitative", "positive": "Se dit d'une information exprimée sous forme de nombres ou de statistiques"}
+{"query": "libératoire", "positive": "Se dit d'un document ou d'une action qui met fin à une obligation ou à une restriction."}
+{"query": "imprévoyant", "positive": "Qui ne prévoit pas ou ne se prépare pas suffisamment pour l'avenir."}
+{"query": "européenne", "positive": "Se dit de quelque chose qui concerne l'Union européenne ou ses pays membres."}
+{"query": "adverse possession", "positive": "L'adverse possession, également appelée prescription acquisitive, est le processus par lequel une personne peut acquérir la propriété d'une terre ou d'un bien immobilier en occupant et en améliorant la propriété de manière continue et hostile pendant une période spécifiée par la loi, sans le consentiment du propriétaire légitime."}
+{"query": "annuité", "positive": "Une annuité est un paiement régulier et fixe effectué chaque année, généralement dans le contexte des prêts ou des investissements."}
+{"query": "consulaire", "positive": "Relatif aux consulats, qui sont des représentations diplomatiques d'un pays à l'étranger"}
+{"query": "conjointement", "positive": "En travaillant ou en agissant ensemble, en combinant les efforts ou les ressources"}
+{"query": "adjoindre", "positive": "Ajouter quelque chose à un ensemble ou à un groupe existant"}
+{"query": "statutairement", "positive": "D'une manière définie ou établie par la loi, un règlement ou les statuts d'une organisation"}
+{"query": "correctionnelle", "positive": "Processus de correction ou de modification d'une erreur dans une procédure administrative."}
+{"query": "droit de suite", "positive": "Le 'droit de suite' est une redevance perçue par les artistes ou leurs héritiers lors de la revente de leurs œuvres originales."}
+{"query": "originaire", "positive": "Désignant le lieu, le pays ou la région où une personne ou une chose a son origine ou est originaire."}
+{"query": "imputabilité", "positive": "La capacité de rendre compte de ses actions et de leurs conséquences."}
+{"query": "matrimonial", "positive": "Se rapportant au mariage ou aux affaires matrimoniales"}
+{"query": "BNC", "positive": "Bulletin statistique des notaires de France"}
+{"query": "modeste", "positive": "Qui ne demande ni ne revendique beaucoup ; qui est simple et sans prétention."}
+{"query": "accidentogène", "positive": "Qui est susceptible de causer des accidents."}
+{"query": "personne morale en instance de radiation", "positive": "Une personne morale en instance de radiation est une entité juridique, comme une entreprise ou une association, qui est en cours de suppression des registres officiels."}
+{"query": "dépens", "positive": "Les 'dépens' représentent les frais engagés lors d'une procédure judiciaire, tels que les frais de justice, les honoraires d'avocat et les frais de témoin."}
+{"query": "crédit-bail", "positive": "Le crédit-bail est une méthode de financement où une entreprise loue un actif, tel qu'un équipement ou un véhicule, auprès d'un prestataire de services de crédit-bail pendant une certaine période, avec une option d'achat à la fin du contrat."}
+{"query": "inhérent", "positive": "Qui appartient naturellement ou est impliqué dans quelque chose, une caractéristique ou une qualité intrinsèque"}
+{"query": "condition préalable", "positive": "Une condition préalable est une exigence ou une règle qui doit être remplie avant qu'une certaine action ou décision puisse être prise."}
+{"query": "outre", "positive": "En plus de, ou à part des éléments déjà mentionnés"}
+{"query": "non-lieu", "positive": "Dans l'administration française, un 'non-lieu' signifie qu'une affaire est close sans suite car il n'y a pas suffisamment de preuves ou d'éléments pour la poursuivre."}
+{"query": "réfutable", "positive": "Qui peut être nié ou réfuté avec des preuves ou des arguments"}
+{"query": "ci-dessus", "positive": "Dans les documents administratifs, 'ci-dessus' est un terme de jargon qui fait référence à un élément précédemment mentionné dans le document."}
+{"query": "legs", "positive": "En français administratif, 'legs' fait référence à un héritage ou une donation faite à une organisation ou un établissement public après le décès d'une personne."}
+{"query": "inviolable", "positive": "Qui ne peut être violé, transgressé ou modifié."}
+{"query": "acte notarié", "positive": "Document rédigé par un notaire, ayant force de loi."}
+{"query": "APE", "positive": "Activité Principale Exercée, une classification utilisée en France pour définir le type d'activité économique principale d'une entreprise"}
+{"query": "protocole", "positive": "Ensemble de règles à suivre pour une communication ou une action spécifique."}
+{"query": "décision défavorable", "positive": "Un résultat qui n'est pas en faveur de quelqu'un."}
+{"query": "possession", "positive": "En langage courant, la 'possession' fait référence à la chose ou aux choses que quelqu'un possède ou détient"}
+{"query": "délictueux", "positive": "Se dit d'un acte ou d'un comportement illégal ou contraire à la réglementation"}
+{"query": "vigilance", "positive": "Être attentif et surveiller une situation de près pour détecter rapidement tout problème ou danger."}
+{"query": "agréer", "positive": "Donner son accord officiel pour quelque chose ou pour quelqu'un, après avoir examiné et vérifié qu'il respecte les règles et les normes."}
+{"query": "identité", "positive": "Ensemble des caractéristiques uniques qui définissent une personne, telles que le nom, la date de naissance ou l'adresse."}
+{"query": "catégorie", "positive": "Un groupe ou une catégorie spécifique dans laquelle quelque chose ou quelqu'un est classé."}
+{"query": "exhorter", "positive": "encourager ou inciter fortement quelqu'un à faire quelque chose"}
+{"query": "précarité", "positive": "État d'insécurité et d'instabilité financière ou émotionnelle"}
+{"query": "puissance paternelle", "positive": "Le terme 'puissance paternelle' fait référence aux droits et responsabilités juridiques qu'un père a sur ses enfants."}
+{"query": "lésionnel", "positive": "Se rapportant à une lésion, c'est-à-dire une blessure ou une dommage à la santé d'une personne."}
+{"query": "opter", "positive": "Faire un choix, sélectionner une option parmi plusieurs."}
+{"query": "se rétracter", "positive": "Annuler ou revenir sur une décision précédente."}
+{"query": "alimentaire", "positive": "Se rapportant à la nourriture ou à l'alimentation en général."}
+{"query": "aisé", "positive": "Qui est facile à faire ou à réaliser"}
+{"query": "dénégation", "positive": "Le terme 'dénégation' fait référence au fait de nier ou de rejeter une demande, une responsabilité ou une allégation."}
+{"query": "regroupement", "positive": "Action de mettre plusieurs choses ou plusieurs personnes ensemble dans un même groupe ou dans un même endroit."}
+{"query": "titulaire", "positive": "Personne qui a le droit, le poste ou le titre d'une chose particulière"}
+{"query": "commuer", "positive": "Échanger une peine ou une sanction contre une autre, généralement une peine plus légère."}
+{"query": "procureur", "positive": "Le procureur est une personne qui représente l'État dans une affaire judiciaire et qui a pour mission de veiller à l'application de la loi."}
+{"query": "décision implicite de rejet", "positive": "Une décision implicite de rejet est une situation administrative qui se produit lorsqu'une autorité ne répond pas à une demande dans un délai déterminé."}
+{"query": "viaire", "positive": "Ensemble des voies de communication, telles que les rues, les routes et les autoroutes"}
+{"query": "aux", "positive": "Le terme 'aux' est utilisé dans l'administration française pour faire référence à la direction des services ou à la responsabilité de la gestion des affaires. Il s'agit d'une abréviation de 'auxiliaire' ou 'auxiliaires'."}
+{"query": "condamnation", "positive": "Action de condamner officiellement quelque chose ou quelqu'un, souvent avec des conséquences négatives."}
+{"query": "indigence", "positive": "Manque grave et durable de ressources matérielles et financières pour subvenir à ses besoins fondamentaux."}
+{"query": "correspondance", "positive": "Une correspondance est un échange de lettres, de documents ou de messages entre deux parties."}
+{"query": "jugement déclaratoire", "positive": "Un jugement déclaratoire est une décision de justice qui a pour but de déterminer et d'énoncer les droits et obligations des parties impliquées dans un litige, sans toutefois ordonner de mesures particulières ou de sanctions."}
+{"query": "absolutoire", "positive": "Qui a le pouvoir d'absoudre ou d'exonérer de toute responsabilité."}
+{"query": "ouvré", "positive": "Se dit des jours où les services administratifs sont ouverts et fonctionnels, par opposition aux jours fériés ou de congés."}
+{"query": "captation", "positive": "L'action de saisir ou d'enregistrer des informations, généralement à l'insu des personnes concernées."}
+{"query": "circonstancié", "positive": "Donnant beaucoup de détails ou expliquant une situation, une action ou un événement de manière détaillée."}
+{"query": "précité", "positive": "Qui a été mentionné précédemment."}
+{"query": "contribution", "positive": "Une contribution est la somme d'argent qu'une personne ou une entreprise paie pour financer un service public ou une assurance."}
+{"query": "actif", "positive": "Un actif est un bien ou un droit qui possède une valeur économique et qui est détenu par une entreprise ou une organisation. Il peut être tangible, comme un immeuble ou un équipement, ou intangible, comme une marque ou un brevet."}
+{"query": "prétendre", "positive": "Affirmer quelque chose comme étant vrai, même si ce n'est pas nécessairement le cas."}
+{"query": "consultative", "positive": "Qui implique la consultation ou l'avis d'experts ou de parties prenantes."}
+{"query": "référencer", "positive": "Ajouter une référence ou une source à un document pour montrer d où vient l information."}
+{"query": "polygamie", "positive": "Une personne étant mariée à plus d'une personne à la fois."}
+{"query": "condemnation", "positive": "Action d'condamner officiellement quelque chose ou quelqu'un, souvent avec des conséquences négatives."}
+{"query": "approvisionner", "positive": "Rendre disponible des fournitures ou des matériaux nécessaires"}
+{"query": "occasionnel", "positive": "Qui se produit ou qui est utilisé seulement de temps en temps, de manière irrégulière."}
+{"query": "décennal", "positive": "Se dit d'un événement ou d'une période qui se répète tous les dix ans."}
+{"query": "se concerter", "positive": "Discuter et décider ensemble d'une action ou d'une décision"}
+{"query": "désigné ci-après", "positive": "mentionné ou nommé ci-dessous"}
+{"query": "acte notarié", "positive": "Un document rédigé par un notaire qui a une valeur légale et qui officialise une transaction ou un accord."}
+{"query": "arguer", "positive": "Fournir des raisons ou des preuves pour soutenir un point de vue ou une position dans un débat ou une discussion."}
+{"query": "délibérer", "positive": "Prendre le temps de réfléchir et de discuter pour prendre une décision."}
+{"query": "faillite", "positive": "Situation où une entreprise ou une personne n'est plus capable de rembourser ses dettes."}
+{"query": "auxdits", "positive": "Désignant les éléments ou points mentionnés précédemment dans un document ou une conversation"}
+{"query": "antérieure", "positive": "qui s'est produit ou qui existe avant quelque chose dans le temps"}
+{"query": "bancaire", "positive": "Relatif aux opérations financières, aux services et aux transactions effectuées par les banques."}
+{"query": "instauration", "positive": "Mise en place, établissement d'une chose, d'un système ou d'une procédure."}
+{"query": "erronée", "positive": "Qui contient une ou des informations incorrectes."}
+{"query": "accusé de réception", "positive": "Confirmation écrite de la réception d'un document."}
+{"query": "AFSSA", "positive": "AFSSA est l'acronyme de l'Agence Française de Sécurité Sanitaire des Aliments, une ancienne institution gouvernementale française responsable de la sécurité alimentaire et de la nutrition."}
+{"query": "fondement de la demande", "positive": "Un fondement de la demande (cause of action en anglais) est le motif ou la base légale sur laquelle une personne ou une entité fonde une réclamation ou une poursuite judiciaire."}
+{"query": "amodiation", "positive": "L'amodiation est un contrat par lequel une partie loue un bien immobilier à une autre partie, qui peut ensuite l'utiliser et en percevoir des revenus, moyennant le paiement d'un loyer."}
+{"query": "erratum", "positive": "un erratum est une correction d'une erreur qui a été publiée dans un document officiel ou un livre"}
+{"query": "tempérament", "positive": "C'est le caractère ou la disposition d'une personne, qui peut influencer ses réactions et son comportement."}
+{"query": "aléa", "positive": "Événement imprévu et incertain qui peut avoir un impact sur une situation ou une décision."}
+{"query": "perpétuer", "positive": "Continuer, maintenir ou faire durer quelque chose dans le temps."}
+{"query": "flagrant délit", "positive": "Un flagrant délit est une infraction pénale qui est observée et arrêtée par les autorités au moment où elle est commise."}
+{"query": "patrimonial", "positive": "Se rapportant à l'héritage ou aux biens possédés par une personne, une famille ou une organisation."}
+{"query": "certificateure", "positive": "Personne ou entreprise responsable de la délivrance de certificats attestant qu'un produit, un processus ou un service répond à des normes spécifiques."}
+{"query": "cartographier", "positive": "Représenter un territoire ou des données géographiques sur une carte."}
+{"query": "avis de réception", "positive": "Un 'avis de réception' est un document qui confirme qu'un destinataire a bien reçu un courrier ou un colis, souvent utilisé pour les recommandés."}
+{"query": "récapitulatif", "positive": "Résumé ou liste qui réunit l'essentiel d'informations importantes"}
+{"query": "chief judge", "positive": "Le chief judge, ou juge en chef, est la personne ayant la plus haute autorité dans un tribunal ou une cour de justice. Il supervise les autres juges, gère l'administration de la cour et participe aux procès."}
+{"query": "récépissé", "positive": "Un récépissé est un document écrit délivré par une autorité administrative pour attester la réception d'une demande ou d'une déclaration, et précisant les références de cette dernière."}
+{"query": "rappel", "positive": "Un rappel est une action qui consiste à contacter une personne ou une entreprise pour leur demander de régler une dette ou pour leur rappeler une obligation envers vous."}
+{"query": "déroger", "positive": "Signifie ne pas suivre ou ne pas respecter une règle, une loi ou une procédure établie."}
+{"query": "corrélativement", "positive": "De manière liée ou en fonction l'une de l'autre."}
+{"query": "décision discrétionnaire", "positive": "Décision prise par une autorité administrative en fonction de son propre jugement, sans être liée par des règles strictes."}
+{"query": "correspondance", "positive": "Un échange de lettres, de documents ou de messages entre deux parties."}
+{"query": "perpétrer", "positive": "Commettre ou réaliser (un acte, une action, un délit)"}
+{"query": "prédéterminer", "positive": "Fixer ou décider quelque chose à l'avance."}
+{"query": "dominicaux", "positive": "Se référant aux services ou activités ayant lieu le dimanche, qui est généralement un jour de repos hebdomadaire."}
+{"query": "dénonciation calomnieuse", "positive": "fausse dénonciation portant préjudice à quelqu'un"}
+{"query": "irrégularité", "positive": "Dans un contexte administratif, une irrégularité fait référence à une situation où quelque chose ne suit pas les règles ou les procédures établies."}
+{"query": "collateral estoppel", "positive": "Le 'collateral estoppel', également connu sous le nom de 'chose jugée collatérale', est une doctrine juridique qui empêche une partie de soulever ou de contester à nouveau un fait ou une question de fait qui a déjà été décidé dans une instance antérieure et opposée entre les mêmes parties."}
+{"query": "se désendetter", "positive": "réduire ses dettes."}
+{"query": "tarifaire", "positive": "Se rapportant aux prix ou tarifs pratiqués pour des biens ou services."}
+{"query": "incessibilité", "positive": "L'incessibilité est une caractéristique qui empêche le transfert ou la vente d'un bien ou d'un droit."}
+{"query": "recenser", "positive": "Faire le compte ou le dénombrement d'un groupe de personnes ou de choses"}
+{"query": "divergent", "positive": "Qui s'écarte ou qui diffère de quelque chose d'habituel, de prévu ou d'attendu."}
+{"query": "contigue", "positive": "Se dit de deux choses ou zones qui sont adjacentes, qui se touchent."}
+{"query": "exhorter", "positive": "Encourager ou inciter fortement quelqu'un à faire quelque chose."}
+{"query": "preuve", "positive": "Un élément qui montre ou démontre quelque chose, une preuve sert à confirmer la véracité d'un fait ou d'une information."}
+{"query": "trésorier", "positive": "La personne responsable de gérer les finances et les investissements d'une organisation ou d'une entreprise."}
+{"query": "assimiler", "positive": "Faire sien, intégrer ou s'approprier quelque chose, généralement une idée, une culture ou une information."}
+{"query": "lucrative", "positive": "désignant une activité, une entreprise ou un investissement qui rapporte beaucoup d'argent"}
+{"query": "ALS", "positive": "Aide légale à la saisie"}
+{"query": "gratuite", "positive": "Se dit d'un service, d'une prestation ou d'un objet qui ne coûte rien à l'utilisateur, sans aucuns frais cachés."}
+{"query": "extra-légal", "positive": "Se dit d'une action ou d'une situation qui n'est pas régie par la loi, mais qui peut avoir des conséquences juridiques."}
+{"query": "regroupement", "positive": "Action de mettre plusieurs choses ou plusieurs personnes ensemble dans un même groupe ou dans un même endroit"}
+{"query": "causal", "positive": "Se dit d'un événement, d'une décision ou d'une action qui est la conséquence directe ou immédiate d'une autre chose."}
+{"query": "CCI", "positive": "Les Chambres de Commerce et d'Industrie (CCI) sont des organismes publics qui accompagnent et soutiennent les entreprises dans leur développement."}
+{"query": "compte", "positive": "Un compte est un registre ou une façon de suivre les informations et les transactions d'une personne ou d'une entité dans un système administratif"}
+{"query": "acquisitif", "positive": "Se dit de quelque chose qui est obtenu ou acquis, en particulier en ce qui concerne les droits ou les biens."}
+{"query": "annulation", "positive": "Action d'annuler, de mettre fin à quelque chose de manière officielle."}
+{"query": "négliger", "positive": "Ne pas accorder suffisamment d'attention ou de soin à quelque chose"}
+{"query": "impécunieuxe", "positive": "Manquant d'argent, insolvable"}
+{"query": "contondant", "positive": "Qui est capable d'infliger une blessure, une douleur ou un dommage par un impact direct"}
+{"query": "mobiliere", "positive": "Ensemble des biens meubles ou équipements appartenant à une entreprise ou une administration"}
+{"query": "droit de précédent", "positive": "principe selon lequel une décision administrative antérieure peut servir de référence pour des cas similaires futurs"}
+{"query": "rejet de pièces justificatives", "positive": "Action de refuser des documents qui prouvent une dépense ou une transaction."}
+{"query": "ordre", "positive": "Instruction ou consigne donnée par une autorité compétente pour être suivie par une personne ou un groupe de personnes."}
+{"query": "conditionnelle", "positive": "Qui dépend ou est sujet à une condition, une exigence ou un ensemble de règles."}
+{"query": "patente", "positive": "Une patente est un document officiel qui prouve qu'une entreprise ou un artisan est enregistré et autorisé à exercer une activité commerciale ou artisanale."}
+{"query": "CNEC", "positive": "Le 'CNEC' signifie le Certificat de Non-Empiètement sur les Certificats d'Urbanisme. Il s'agit d'une attestation délivrée par l'administration française, confirmant qu'un terrain est constructible et qu'aucun certificat d'urbanisme en cours de validité ne s'oppose à un nouveau projet de construction."}
+{"query": "longitudinaux", "positive": "Se dit d'une étude ou d'une collecte de données qui se fait sur une longue période, en suivant les mêmes individus ou les mêmes événements au fil du temps"}
+{"query": "délibérante", "positive": "Faisant référence à une réunion ou une séance au cours de laquelle une décision est prise après une discussion ou une délibération."}
+{"query": "intempestive", "positive": "arrivant ou se produisant à un mauvais moment, de manière inopportune"}
+{"query": "diligent", "positive": "Qui fait preuve d'application et d'assiduité dans son travail."}
+{"query": "objection", "positive": "Un refus ou une contestation d'une décision ou d'une demande."}
+{"query": "arguer;argüer", "positive": "Défendre ou contester une position ou une décision en présentant des raisons ou des preuves"}
+{"query": "dommages", "positive": "Les 'dommages' représentent les préjudices ou les pertes subies par une personne ou une entité, qui peuvent être matériels, corporels ou moraux et faire l'objet d'indemnisation."}
+{"query": "prépondérant", "positive": "Qui a le plus d'importance ou de poids dans une situation donnée."}
+{"query": "délaissement", "positive": "Le délaissement fait référence à l'abandon ou à la négligence d'une responsabilité ou d'une obligation."}
+{"query": "institution", "positive": "Un établissement public ou privé qui fournit des services ou des programmes pour répondre à un besoin social ou éducatif."}
+{"query": "matrice", "positive": "Un modèle ou un cadre qui organise des informations ou des données pour faciliter la compréhension et l'analyse"}
+{"query": "recrudescence", "positive": "Augmentation soudaine et significative d'un phénomène, généralement utilisé dans un contexte négatif."}
+{"query": "dépourvue", "positive": "Manquant de quelque chose, en particulier d'argent ou de ressources."}
+{"query": "régime pénitentiaire", "positive": "Ensemble des règles et des conditions de détention dans un établissement pénitentiaire."}
+{"query": "conseil de prud'hommes", "positive": "Le conseil de prud'hommes est une juridiction française qui règle les litiges entre employeurs et salariés."}
+{"query": "production", "positive": "Activité de création ou de réalisation de biens ou de services"}
+{"query": "biens propres", "positive": "Les biens propres sont des biens ou des actifs qui appartiennent à une personne avant son mariage ou qui sont acquis par la suite par donation ou héritage. Ces biens restent la propriété exclusive de cette personne en cas de divorce ou de décès."}
+{"query": "acte notarié", "positive": "Un document officiel rédigé par un notaire, qui a une valeur légale."}
+{"query": "accipiens", "positive": "Terme désignant une personne qui va recevoir ou qui a reçu quelque chose officiellement."}
+{"query": "obiter dictum", "positive": "Remarque ou commentaire accessoire d'un juge dans une décision de justice, qui n'a pas de valeur juridiquement contraignante."}
+{"query": "liquide", "positive": "Se réfère à la forme d'un actif qui peut être facilement converti en argent ou qui a une valeur marchande immédiate."}
+{"query": "opposable", "positive": "Se dit d'une décision, d'un acte ou d'un document qui peut être contesté ou faire l'objet d'un recours devant une autorité compétente."}
+{"query": "bénéfice", "positive": "Avantage ou gain obtenu, généralement en termes financiers"}
+{"query": "patente", "positive": "Un document officiel qui prouve qu'une entreprise ou un artisan est enregistré et autorisé à exercer une activité commerciale ou artisanale."}
+{"query": "question préjudicielle", "positive": "Une question préjudicielle est une question soumise à une juridiction pour déterminer si elle a compétence pour juger une affaire en cours."}
+{"query": "émanation", "positive": "Sortie ou production provenant d'une source ou d'un organisme."}
+{"query": "praticien", "positive": "Personne qui exerce une profession dans le domaine de la santé ou du droit, et qui a acquis une grande expérience et compétence dans sa spécialité."}
+{"query": "viduité", "positive": "État d'une personne veuve, qui a perdu son conjoint"}
+{"query": "coordonnées", "positive": "Information permettant de localiser un lieu ou une personne, telles qu'une adresse, un numéro de téléphone ou des coordonnées GPS."}
+{"query": "voie", "positive": "une méthode ou un chemin spécifique pour le traitement ou la transmission de quelque chose dans une administration"}
+{"query": "leasing", "positive": "Le leasing est un contrat de location à long terme d'un bien, comme une voiture ou une machine, moyennant des paiements réguliers."}
+{"query": "débit de boissons", "positive": "Un débit de boissons est un établissement où l'on sert des boissons alcoolisées ou non-alcoolisées à consommer sur place."}
+{"query": "abeyance", "positive": "Suspension temporaire, interruption momentanée."}
+{"query": "délégation parfaite", "positive": "La délégation parfaite est une méthode de gestion efficace où une tâche ou une responsabilité est transférée à un individu ou à un groupe compétent, leur donnant les pleins pouvoirs pour atteindre un objectif spécifique, tout en maintenant la responsabilité et la communication claires."}
+{"query": "procédure de validation", "positive": "Ensemble d'étapes pour vérifier et approuver une demande ou un document."}
+{"query": "non bis in idem", "positive": "Ce terme est utilisé pour décrire une situation où une personne ne peut pas être poursuivie ou sanctionnée deux fois pour la même infraction."}
+{"query": "unicité", "positive": "État ou caractère de quelque chose qui est unique, qui ne se répète pas ou qui n'a pas d'égal"}
+{"query": "résorber", "positive": "Régler ou éliminer progressivement un problème, une dette ou un arriéré"}
+{"query": "émaner", "positive": "Signifie 'provenir de' ou 'être la source de'."}
+{"query": "irréfutable", "positive": "Qui ne peut être contesté, réfuté ou réfutable"}
+{"query": "personne morale en instance de radiation", "positive": "Entité juridique en cours de suppression des registres officiels."}
+{"query": "bank", "positive": "Ensemble d'informations ou de services regroupés dans un espace dédié sur une plateforme numérique."}
+{"query": "dépassé", "positive": "Qui n'est plus à jour, obsolète."}
+{"query": "avis de réception", "positive": "Confirmation officielle de la réception d'un document."}
+{"query": "dédicace", "positive": "Engagement ou application totale à une tâche ou à un objectif."}
+{"query": "accusé de réception", "positive": "Document confirmant la réception d'un courrier ou d'un colis."}
+{"query": "attache", "positive": "Personne responsable de l'accomplissement de certaines tâches administratives et de la gestion des dossiers dans un service donné."}
+{"query": "chronique", "positive": "Se dit d'une situation qui dure depuis longtemps ou qui a tendance à se répéter fréquemment."}
+{"query": "CANAM", "positive": "Le CANAM est un organisme qui s'occupe de la coordination entre les assurances maladie française et canadienne pour les personnes qui voyagent entre les deux pays"}
+{"query": "récriminer", "positive": "Exprimer son mécontentement ou son désaccord d'une manière forte et claire"}
+{"query": "créance", "positive": "Une créance est une somme d'argent due à une personne ou à une entreprise par une autre partie."}
+{"query": "conventionné", "positive": "Un service, un professionnel ou un produit est dit 'conventionné' lorsqu'il est agréé et reconnu par les autorités compétentes, et qu'il respecte les normes et conditions établies par un accord ou une convention."}
+{"query": "animus", "positive": "L'animus est un terme de jargon administratif qui se réfère à l'intention ou au but derrière une action ou une décision."}
+{"query": "assermenté", "positive": "Un document ou une personne assermentée est une personne ou un document qui a prêté serment pour confirmer la véracité et l'exactité de ce qu'il contient ou de ce qu'il déclare."}
+{"query": "gain", "positive": "Augmentation ou avantage financier."}
+{"query": "révocable", "positive": "Qui peut être révoqué ou annulé."}
+{"query": "viduité", "positive": "État d'une personne veuve, qui a perdu son conjoint."}
+{"query": "contractuellement", "positive": "Se dit de quelque chose qui est régi par un contrat, qui décrit les termes et les conditions d'un accord entre deux parties."}
+{"query": "lotir", "positive": "Découper un terrain en plusieurs parcelles, en vue de le vendre ou de l'aménager."}
+{"query": "expulsion constructive", "positive": "L'expulsion constructive est une situation dans laquelle un propriétaire force indirectement un locataire à quitter un logement, en violation des droits du locataire, sans pour autant recourir à une expulsion physique ou à un délogement."}
+{"query": "compétence", "positive": "la capacité ou l'aptitude à accomplir une tâche de manière efficace."}
+{"query": "manquer", "positive": "être absent ou ne pas être présent, en particulier dans un contexte où il est attendu ou requis"}
+{"query": "obsolète", "positive": "qui n'est plus applicable"}
+{"query": "aisée", "positive": "Facile à accomplir ou à comprendre"}
+{"query": "pointé du doigt", "positive": "Critiqué ou désigné comme responsable."}
+{"query": "investir", "positive": "Consacrer de l'argent ou des ressources dans un projet ou une activité dans le but d'obtenir un bénéfice ou un retour sur investissement."}
+{"query": "pléthorique", "positive": "Se dit d'une chose ou d'une situation dans laquelle il y a beaucoup trop de quantité, de choses ou de personnes."}
+{"query": "AL", "positive": "Autorisation de sortie temporaire d'un document ou d'un bien d'un service public"}
+{"query": "clause pénale", "positive": "disposition contractuelle qui prévoit le paiement d'une somme d'argent ou la réalisation d'une action spécifique en cas de manquement à une obligation contractuelle"}
+{"query": "minutieuxe", "positive": "Qui demande une grande précision et un soin dans les détails."}
+{"query": "médiation", "positive": "Processus d'aide à la résolution de conflits entre deux parties, impliquant un tiers impartial appelé 'médiateur'"}
+{"query": "condition subsequent", "positive": "Une 'condition subsequent' est une clause dans un contrat qui spécifie qu'une partie de l'accord ne sera exécutée que si une certaine condition est remplie."}
+{"query": "manquer", "positive": "En français administratif, 'manquer' signifie être absent ou ne pas être présent, en particulier dans un contexte où il est attendu ou requi."}
+{"query": "ADPA", "positive": "L'ADPA est un document administratif important pour les personnes âgées ou handicapées, qui permet de désigner une personne de confiance pour les représenter dans leurs démarches."}
+{"query": "fractionner", "positive": "Découper une chose en plusieurs parties égales."}
+{"query": "levée", "positive": "Action d'annuler une restriction ou un blocage"}
+{"query": "prépondérante", "positive": "Qui a le plus d'importance ou de poids par rapport aux autres."}
+{"query": "consentante", "positive": "Qui a donné son accord, qui est d'accord."}
+{"query": "péril", "positive": "Situation dangereuse ou risque de dommage."}
+{"query": "co(-)lotis", "positive": "Se dit de personnes qui sont propriétaires de terrains ou de biens immobiliers adjacents et qui peuvent être soumises à des règles communes."}
+{"query": "dénomination", "positive": "Le terme 'dénomination' fait référence au nom ou à la désignation officielle d'une entité, d'un produit ou d'un service."}
+{"query": "par-devant", "positive": "Signifie 'en présence de' ou 'sous les yeux de', utilisé pour indiquer qu'une action ou une procédure se déroule en présence d'une autorité compétente."}
+{"query": "domiciliaire", "positive": "Se dit d'une adresse personnelle où un individu est officiellement domicilié et reçoit son courrier"}
+{"query": "plainte", "positive": "Expression d'une insatisfaction ou d'un mécontentement à propos d'un service ou d'un produit"}
+{"query": "décision discrétionnaire", "positive": "Décision prise par une autorité en fonction de son appréciation personnelle, sans être liée par des règles strictes."}
+{"query": "appel", "positive": "Action de contacter une administration ou une entreprise pour obtenre des informations ou entamer une démarche."}
+{"query": "résorption", "positive": "Le terme 'résorption' fait référence au processus d'élimination ou d'absorption graduelle d'un élément, d'une anomalie ou d'un problème dans un système donné."}
+{"query": "onéreuxe", "positive": "Qui coûte cher, synonyme de coûteux"}
+{"query": "contributife", "positive": "Se dit d'un document ou d'une information qui permet de déterminer le montant des cotisations sociales d'une personne ou d'une entreprise."}
+{"query": "déféré", "positive": "Signifie transféré ou reporté à une autorité supérieure ou à une date ultérieure."}
+{"query": "ayants cause", "positive": "Désigne les personnes qui héritent des droits ou obligations d'une autre personne décédée."}
+{"query": "Instruction interministérielle", "positive": "Une instruction interministérielle est un document écrit émis par le Premier ministre ou par un ministre pour coordonner l'action de plusieurs administrations dans un domaine particulier."}
+{"query": "pondérer", "positive": "Prendre en compte différents éléments dans une décision, en leur accordant une valeur relative."}
+{"query": "dossier unique", "positive": "Un dossier unique est un regroupement de documents et d'informations concernant une seule affaire ou demande, dans le but de faciliter le traitement et le suivi administratif."}
+{"query": "flagrant", "positive": "Qui est facilement visible ou évident, ne laissant aucun doute sur sa véracité ou son caractère manifeste."}
+{"query": "indignité", "positive": "État de quelque chose ou quelqu'un qui est considéré comme honteux, déshonorant ou très méprisable."}
+{"query": "réactualisation", "positive": "Mettre à jour des informations ou des données avec des renseignements plus récents."}
+{"query": "conviction", "positive": "Ferme croyance ou opinion sur quelque chose, généralement basée sur des preuves ou des convictions personnelles."}
+{"query": "rejet de pièces justificatives", "positive": "Refus de documents prouvant une situation ou un fait."}
+{"query": "au demeurant", "positive": "En général, 'au demeurant' est une expression utilisée pour ajouter une information supplémentaire qui est liée au sujet précédent, mais qui n'est pas forcément essentielle à la compréhension globale du message."}
+{"query": "pécuniairement", "positive": "Relatif à l'argent ou aux biens matériels"}
+{"query": "obsolète", "positive": "Qui n'est plus en usage, dépassé."}
+{"query": "équitablement", "positive": "De manière juste et impartiale envers tous les individus ou parties concernées."}
+{"query": "monoparentale", "positive": "Se dit d'une situation où un enfant est élevé par un seul parent"}
+{"query": "effacement", "positive": "Action de supprimer ou de radi er des informations personnelles d'un fichier ou d'une base de données."}
+{"query": "Commission d'Accès aux Documents Administratifs (CADA)", "positive": "La CADA est une autorité administrative indépendante qui aide les citoyens à obtenir des informations auprès des administrations publiques."}
+{"query": "admonition", "positive": "une remontrance ou un avertissement formel"}
+{"query": "nouveauté", "positive": "Quelque chose de nouveau ou d'inhabituel qui vient de se développer"}
+{"query": "pointé du doigt", "positive": "Être désigné comme responsable ou coupable de quelque chose."}
+{"query": "DJA", "positive": "DJA est un acronyme pour Décision Juridictionnelle d'Annulation, qui est une décision prise par une autorité administrative pour annuler une décision précédente jugée illégale."}
+{"query": "litigieux", "positive": "Se dit d'une situation ou d'un point qui fait l'objet d'un désaccord ou d'un conflit, nécessitant souvent une intervention juridique pour être résolu."}
+{"query": "instructeur", "positive": "Une personne ou un document qui guide et explique comment effectuer une tâche ou un processus."}
+{"query": "se rétracter", "positive": "Revenir sur ce qu’on a dit."}
+{"query": "extra(-)légal", "positive": "Se dit de quelque chose qui n'est pas explicitement autorisé ou interdit par la loi, mais qui peut être considéré comme contraire à l'esprit de la loi ou comme une violation des principes généraux de la justice."}
+{"query": "rétractation", "positive": "Action de se rétracter, c'est-à-dire de se retirer ou d'annuler une décision ou un engagement préalable."}
+{"query": "mensualité", "positive": "Paiement régulier et périodique (généralement mensuel) d'une somme fixe pour rembourser une dette ou financier un service."}
+{"query": "antérieurement", "positive": "Se dit de quelque chose qui s'est produit avant un événement ou une date donnée."}
+{"query": "conscience", "positive": "La capacité de penser, de ressentir et d'avoir des expériences subjectives. C'est ce qui permet à une personne d'être consciente de son environnement et de ses propres pensées et émotions."}
+{"query": "privilège", "positive": "Un avantage ou un pouvoir spécial accordé à quelqu’un ou à un groupe de personnes."}
+{"query": "litigant", "positive": "Une personne ou une organisation qui est en désaccord avec une décision ou une action prise par une autorité administrative ou un tribunal et qui cherche à la contester en engageant une procédure judiciaire."}
+{"query": "huisclos", "positive": "signifiant une réunion ou une discussion se déroulant en privé, sans la présence d'autres personnes extérieures"}
+{"query": "bourgeoisement", "positive": "Manière de vivre ou de se comporter qui montre qu'on appartient à la classe moyenne supérieure, avec une certaine richesse et un style de vie confortable."}
+{"query": "a priori", "positive": "Signifiant 'selon la raison avant toute preuve ou expérience'. Il s'agit d'une hypothèse ou d'un jugement préalable fondé sur des connaissances antérieures."}
+{"query": "épars", "positive": "Désigne un état de désorganisation ou de diffusion sans ordre."}
+{"query": "illicite", "positive": "Qui est interdit par la loi ou par les règlements."}
+{"query": "réquisition", "positive": "Une demande officielle de fourniture, de service ou d'utilisation de biens matériels, généralement réalisée dans un contexte administratif ou militaire."}
+{"query": "dégressif", "positive": "Qui diminue progressivement."}
+{"query": "européen", "positive": "Qui se rapporte à l'Union européenne ou à l'un de ses membres"}
+{"query": "préjudice", "positive": "Un préjudice est un dommage ou un tort causé à une personne, qui peut entraîner une perte financière, matérielle ou morale."}
+{"query": "spécificité", "positive": "Caractéristique ou détail qui rend une chose unique ou différente des autres."}
+{"query": "prégnant", "positive": "Qui est dominant, omniprésent ou a une grande influence sur quelque chose"}
+{"query": "cumulativement", "positive": "qui s'ajoute à ce qui est déjà là ou qui s'accumule"}
+{"query": "affectation", "positive": "L'affectation est le fait d'assigner une personne ou une ressource à un poste, une tâche ou un service particulier dans une organisation."}
+{"query": "subsidiairement", "positive": "De manière secondaire ou accessoire, seulement en l'absence d'autres ressources ou méthodes."}
+{"query": "exclure", "positive": "Ne pas inclure ou laisser quelque chose ou quelqu'un participer à un groupe ou à une activité."}
+{"query": "lettre de motivation", "positive": "Un document écrit qui accompagne un CV et dans lequel un candidat explique ses motivations pour postuler à un emploi."}
+{"query": "régularisable", "positive": "Qui peut être mis en règle, rendu conforme à la loi ou à une norme."}
+{"query": "infraction capitale", "positive": "Un type de crime qui est considéré comme très grave et peut entraîner la peine de mort."}
+{"query": "instructeure", "positive": "Personne chargée de donner des instructions ou des directives dans une administration."}
+{"query": "s’avérer", "positive": "Se révéler, se montrer tel."}
+{"query": "détails spécifiques", "positive": "Renseignements ou informations précis et détaillés sur une situation ou un événement."}
+{"query": "mensuellement", "positive": "signifie quelque chose qui se produit tous les mois"}
+{"query": "consentement", "positive": "Accord donné de manière explicite et volontaire"}
+{"query": "CPAF", "positive": "Comité de Pilotage des Actions de Fusion"}
+{"query": "greffée", "positive": "Une personne qui a subi une greffe, c'est-à-dire une intervention chirurgicale pour transplanter un organe, du tissu ou une cellule d'un donneur à un receveur."}
+{"query": "obérer", "positive": "Encharger d'une dette ou d'une obligation qui rend difficile l'accomplissement d'autres tâches."}
+{"query": "BRC", "positive": "BRC est un acronyme pour 'Bureau de Recherches Géologiques et Minières', une institution française qui s'occupe de l'étude des sols et des sous-sols."}
+{"query": "intégrale", "positive": "Qui inclut tous les éléments ou aspects d'une situation donnée."}
+{"query": "obligation de ne pas faire", "positive": "une règle qui interdit de faire une certaine action"}
+{"query": "collatéral", "positive": "Garantie fournie pour assurer le paiement d'une dette ou d'un prêt en cas de défaillance de la partie contractante."}
+{"query": "DPM", "positive": "Le sigle DPM signifie 'Dossier Personnel de Mission'. Il s'agit d'un dossier dématérialisé qui contient les informations et les documents relatifs à une mission spécifique d'un agent public."}
+{"query": "foi", "positive": "Croyance forte et solide en quelque chose ou en quelqu'un, confiance."}
+{"query": "litigieux", "positive": "Se dit d'une situation ou d'un point qui est sujet à controverse ou à dispute"}
+{"query": "passe-droit", "positive": "Un passe-droit est un traitement de faveur ou une exemption accordée à certaines personnes, leur permettant d'éviter les règles ou procédures normales applicables aux autres."}
+{"query": "prononcé", "positive": "Signifiant officiellement approuvé ou accepté."}
+{"query": "ASSEDIC", "positive": "L'ASSEDIC est une ancienne agence gouvernementale française responsable de l'assurance chômage, qui a été remplacée par Pôle Emploi en 2008."}
+{"query": "insolvabilité", "positive": "État financier d'une personne ou d'une entreprise qui ne peut plus rembourser ses dettes."}
+{"query": "accusé de réception", "positive": "Confirmation écrite de la réception d'un document ou d'une communication."}
+{"query": "soin", "positive": "Activité visant à maintenir ou à améliorer la santé, le bien-être et le confort d'une personne."}
+{"query": "impersonnele", "positive": "Se dit d'un document ou d'un style d'écriture qui ne mentionne pas le destinataire de manière explicite, privilégiant une formulation générale et neutre."}
+{"query": "coïndivisaire", "positive": "Qui a des droits de propriété partagés sur un bien ou un actif."}
+{"query": "procédure de radiation", "positive": "Action d'enlever le nom d'une personne ou d'une entité d'une liste ou d'un registre officiel."}
+{"query": "conciliateur", "positive": "Personne qui aide à résoudre des conflits ou des désaccords entre deux parties."}
+{"query": "demandeur", "positive": "Une personne ou une organisation qui soumet une demande officielle pour un service, une autorisation ou un avantage."}
+{"query": "maint", "positive": "Délai maximum de traitement d'une demande ou d'un dossier administratif."}
+{"query": "dénivelé", "positive": "La différence de hauteur entre le point le plus bas et le point le plus haut d'un terrain ou d'une zone."}
+{"query": "examiner", "positive": "Vérifier et évaluer soigneusement (un document, une demande, une situation, etc.) dans le but de prendre une décision ou de donner une approbation."}
+{"query": "libératoire", "positive": "Se dit d'un document ou d'une action qui met fin à une obligation ou à une restriction"}
+{"query": "priori", "positive": "Décidé ou établi avant que quelque chose d'autre ne se produise; fondé sur des considérations théoriques ou spéculatives plutôt que sur des preuves ou des faits concrets."}
+{"query": "inachevé", "positive": "Qui n'est pas encore terminé ou complété."}
+{"query": "ayants droit", "positive": "Dans un contexte administratif, les 'ayants droit' sont les personnes qui ont le droit de bénéficier d'un service, d'une prestation ou d'un avantage en raison de leur lien avec quelqu'un ou de leur situation particulière."}
+{"query": "amodiataire", "positive": "Désigne une personne ou une entité qui bénéficie d'un contrat d'amodiation, c'est-à-dire un contrat de location d'un bien appartenant à une administration publique."}
+{"query": "exhaustivité", "positive": "L'exhaustivité fait référence à la qualité de fournir ou d'inclure tout ce qui est nécessaire, pertinent ou requis; aucun détail important n'est manquant ou laissé de côté."}
+{"query": "recette", "positive": "La 'recette' dans un contexte administratif fait référence aux montants d'argent attendus ou perçus par une organisation ou un service gouvernemental."}
+{"query": "morale", "positive": "Ensemble de règles et de valeurs qui guident les actions d'une personne ou d'une organisation, en fonction de ce qui est considéré comme juste et bon."}
+{"query": "document unique", "positive": "Un document unique est un document regroupant l'ensemble des évaluations des risques professionnels pour la sécurité et la santé des travailleurs au sein d'une entreprise."}
+{"query": "incarcération", "positive": "L'incarcération est le fait d'enfermer une personne dans une prison ou une autre forme de détention, généralement comme punition pour une infraction ou un crime."}
+{"query": "CPAF", "positive": "Le 'CPAF' est un acronyme pour 'Comité de Pilotage des Actions de Fusion'."}
+{"query": "huis clos", "positive": "Signifiant une réunion ou une discussion se déroulant en privé, sans la présence d'autres personnes extérieures."}
+{"query": "s’agissant de", "positive": "Se référant à ou concernant un sujet spécifique"}
+{"query": "rectification", "positive": "Correction d'une erreur ou d'une information inexacte."}
+{"query": "cumulable", "positive": "Le terme 'cumulable' fait référence à la capacité de cumuler, d'additionner ou de combiner des avantages, des allocations ou des droits."}
+{"query": "valablement", "positive": "De manière valable, juste et légale."}
+{"query": "opposant", "positive": "Une personne ou une partie qui s'oppose à une décision, une proposition ou un point de vue."}
+{"query": "objet", "positive": "Un objet est une chose matérielle ou immatérielle sur laquelle porte une action administrative, telle qu'une demande, une réclamation ou une décision."}
+{"query": "truchement", "positive": "Intermédiaire, personne ou moyen permettant de faire la liaison entre deux parties dans une transaction ou une négociation."}
+{"query": "CADA", "positive": "La Commission d'Accès aux Documents Administratifs (CADA) est une autorité administrative indépendante qui aide les citoyens à obtenir des informations auprès des administrations publiques."}
+{"query": "reconduction", "positive": "La reconduction est le renouvellement automatique ou l'extension d'un contrat, d'un accord, d'une autorisation ou d'un service après la fin de sa période initiale."}
+{"query": "aléatoire", "positive": "contrat dont l’effet dépend d’un événement futur incertain (ex : contrat d’assurance)."}
+{"query": "préexistante", "positive": "Qui existe ou a déjà été créée avant un événnement ou une action spécifique."}
+{"query": "décision discrétionnaire", "positive": "Décision prise par une autorité en fonction de son propre jugement, sans être liée par des règles strictes."}
+{"query": "exclusion", "positive": "Action de ne pas inclure quelqu'un ou quelque chose dans un groupe, un processus ou un avantage."}
+{"query": "pacte", "positive": "Un accord ou une entente entre deux parties."}
+{"query": "exagérément", "positive": "Se dit d une chose qui est décrite ou présentée de manière plus importante ou sérieuse qu elle ne l est en réalité."}
+{"query": "s’ enquérir", "positive": "Faire une demande d'information ou vérifier des détails."}
+{"query": "publié", "positive": "Signifie 'rendre public' ou 'accessible à tous'"}
+{"query": "opératoire", "positive": "Se dit d'une procédure ou d'un outil qui est pratique, efficace et permet d'accomplir une tâche spécifique."}
+{"query": "primo-immigrant", "positive": "Une personne qui déménage dans un nouveau pays pour la première fois et qui n'a jamais vécu auparavant dans ce pays en tant que résident permanent."}
+{"query": "commettre", "positive": "Effectuer ou causer (un acte ou une action)"}
+{"query": "provisionnele", "positive": "Préparation ou réserve de ressources (argent, biens, etc.) en vue d'une utilisation future."}
+{"query": "abstract of title", "positive": "Résumé des transactions importantes associées à un bien immobilier, vérifié par un expert juridique."}
+{"query": "livraison", "positive": "Action de transporter et de remettre un colis ou une marchandise à son destinataire."}
+{"query": "ad probationem", "positive": "Évaluation ou vérification d'une personne ou d'une situation avant une décision finale."}
+{"query": "ayantscause", "positive": "Une personne ayant un intérêt légitime dans une affaire ou une procédure, généralement par héritage ou relation familiale."}
+{"query": "inaltérable", "positive": "Qui ne peut pas être changé ou modifié."}
+{"query": "désapprobation", "positive": "Signifie le fait de ne pas approuver ou rejeter une demande ou une proposition."}
+{"query": "brief", "positive": "Un résumé court et clair d'une situation ou d'un plan."}
+{"query": "répréhensible", "positive": "Qui peut être puni ou critiqué selon des règles ou des normes établies."}
+{"query": "lucratif", "positive": "Qui rapporte beaucoup d'argent."}
+{"query": "signification", "positive": "C'est ce que signifie réellement un mot ou une expression"}
+{"query": "générer", "positive": "Faire apparaître ou créer quelque chose, généralement à partir de données ou d'informations existantes."}
+{"query": "apparence", "positive": "La façon dont quelque chose ou quelqu'un paraît à l'extérieur."}
+{"query": "pénalement", "positive": "Se dit d'une conséquence légale liée à une infraction ou un délit, qui peut entraîner des sanctions telles que des amendes, des peines de prison ou d'autres restrictions de liberté."}
+{"query": "sous-jacent", "positive": "Se dit d'un élément ou d'un facteur qui est à la base de quelque chose, souvent caché ou implicite."}
+{"query": "conséquent", "positive": "Qui a des effets importants ou des conséquences sérieuses."}
+{"query": "situation maritale", "positive": "État civil d'une personne en ce qui concerne le mariage, c'est-à-dire si elle est célibataire, mariée, divorcée ou veuve."}
+{"query": "droit de précédent", "positive": "Principe selon lequel une décision antérieure crée une règle applicable à des situations similaires futures."}
+{"query": "carte", "positive": "Un document officiel qui prouve l'identité d'une personne ou qui donne des droits spécifiques."}
+{"query": "juridictionnel", "positive": "Se rapportant à la juridiction, c'est-à-dire l'autorité d'un tribunal ou d'un organe judiciaire à trancher des litiges ou à appliquer la loi."}
+{"query": "DGS", "positive": "La DGS, ou Direction Générale de la Santé, est une unité du ministère de la Santé qui coordonne et met en œuvre les politiques de santé publique en France."}
+{"query": "exciper", "positive": "invoquer, alléguer une exception ou un moyen de défense dans un procès"}
+{"query": "irrépétible", "positive": "Qui ne peut pas se produire à nouveau ou qui ne doit pas être répété."}
+{"query": "dévolution", "positive": "Le terme 'dévolution' en français fait référence au transfert de compétences, de droits ou de responsabilités d'une autorité à une autre."}
+{"query": "caractérisé", "positive": "Défini ou identifié par des caractéristiques ou des traits distinctifs."}
+{"query": "convenir", "positive": "Signifie être d'accord ou approprié pour une situation donnée."}
+{"query": "in bonis", "positive": "Succession dans laquelle les dettes du défunt sont inférieures ou égales à la valeur de ses biens."}
+{"query": "SIRET", "positive": "Un SIRET est un numéro unique attribué à chaque entreprise en France par l'INSEE pour les identifier et les suivre."}
+{"query": "CRAM", "positive": "La CRAM est une caisse régionale d'assurance maladie, qui gère la sécurité sociale et les remboursements de soins médicaux dans une région donnée en France."}
+{"query": "décision discrétionnaire", "positive": "décision prise par une autorité en fonction de son jugement personnel, sans être liée par des règles strictes"}
+{"query": "stipuler", "positive": "Signifier ou préciser clairement une condition ou un accord dans un document officiel."}
+{"query": "tort", "positive": "Erreur ou faute dans une procédure, un document ou une décision."}
+{"query": "CNED", "positive": "Le Centre National d'Enseignement à Distance (CNED) est un organisme français qui propose des formations scolaires et professionnelles à distance."}
+{"query": "CIO", "positive": "Le CIO est la personne responsable de la gestion des technologies de l'information dans une entreprise."}
+{"query": "mobiliere", "positive": "Ensemble des biens meubles ou équipements appartenant à une entreprise ou une administration."}
+{"query": "collecteure", "positive": "Un outil ou un système qui recueille, rassemble ou organise des informations ou des données."}
+{"query": "nul(le) et sans effet", "positive": "Signifie qu'une action, décision ou document est considérée comme invalide ou sans valeur."}
+{"query": "impliquer", "positive": "Signifie que quelque chose ou quelqu'un est concerné ou a une relation avec une situation ou d'une action."}
+{"query": "se prévaloir", "positive": "utiliser un droit ou un avantage auquel on a droit"}
+{"query": "récursoire", "positive": "Se dit d'un recours ou d'une réclamation qui est présentée à nouveau, après avoir été rejetée une première fois."}
+{"query": "erroné", "positive": "Qui contient une ou des informations incorrectes."}
+{"query": "à l’ insu de", "positive": "sans que quelqu'un ne le sache ou n'en soit informé"}
+{"query": "illicéité", "positive": "Caractère de ce qui est interdit ou illégal"}
+{"query": "restrictif", "positive": "Se dit d'une règle, d'une condition ou d'une politique qui limite ou restreint les possibilités, les choix ou les actions."}
+{"query": "promptitude", "positive": "La promptitude est la capacité à agir rapidement et de manière efficace dans une situation donnée."}
+{"query": "éléments d'appréciation", "positive": "Informations ou critères permettant de juger ou d'évaluer une situation"}
+{"query": "ACCRE", "positive": "L'ACCRE est une aide aux chômeurs créant ou reprenant une entreprise, qui permet une exonération de charges sociales pendant un certain temps."}
+{"query": "couvert", "positive": "Signifiant que quelque chose est pris en charge ou payé par une assurance"}
+{"query": "précité", "positive": "qui a été mentionné précédemment."}
+{"query": "assermentée", "positive": "Une personne assermentée est une persone qui a prêté serment de dire la vérité et de remplir ses fonctions de manière honnête et impartiale."}

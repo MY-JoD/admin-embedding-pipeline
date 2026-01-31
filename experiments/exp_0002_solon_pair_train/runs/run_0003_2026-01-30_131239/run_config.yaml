@@ -1,0 +1,50 @@
+schema_version: '1.0'
+run_id: run_0003_2026-01-30_131239
+exp_id: exp_0002_solon_pair_train
+created_at: '2026-01-30T13:12:39Z'
+dry_run: false
+inputs:
+  parent_model_ref: OrdalieTech/Solon-embeddings-large-0.1
+  train_snapshot_ids:
+  - ds_0003_iter01
+  eval_snapshot_ids: []
+task:
+  type: embedding
+  format: pair
+  text_fields:
+    query: query
+    positive: positive
+training:
+  enabled: true
+  epochs: 1
+  batch_size: 16
+  max_seq_length: 256
+  lr: 2e-4
+  precision: bf16
+  device: cuda
+  save_every: end
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  bias: none
+  target_modules:
+  - query
+  - key
+  - value
+tracking:
+  local:
+    enabled: true
+  wandb:
+    enabled: false
+artifacts:
+  run_dir: experiments\exp_0002_solon_pair_train\runs\run_0003_2026-01-30_131239
+  artifacts_dir: experiments\exp_0002_solon_pair_train\runs\run_0003_2026-01-30_131239\artifacts
+data_lineage:
+  provider: simulation
+  simulation_id: sim_0001_term_to_def
+  injected_split: iter01
+  max_iterations: 4
+  ui_asset_ref: experiments/exp_0002_solon_pair_train/assets_ui/sim_0001_term_to_def
+  incoming_file: data_sources/exp_0002_solon_pair_train/incoming/batch.jsonl
+  source_train_file: staging_data/simulations/sim_0001_term_to_def/train/iter01.train.jsonl

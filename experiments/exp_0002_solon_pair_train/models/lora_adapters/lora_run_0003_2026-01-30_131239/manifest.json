@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "model_id": "lora_run_0003_2026-01-30_131239",
+  "exp_id": "exp_0002_solon_pair_train",
+  "run_id": "run_0003_2026-01-30_131239",
+  "created_at": "2026-01-30T13:19:26Z",
+  "base_model_ref": "OrdalieTech/Solon-embeddings-large-0.1",
+  "base_model_local_dir": "model_staging\\base_models\\solon-embeddings-large-0.1",
+  "strategy": "chain",
+  "parent_model_id": "lora_run_0002_2026-01-30_122922",
+  "adapter_dir": "experiments\\exp_0002_solon_pair_train\\models\\lora_adapters\\lora_run_0003_2026-01-30_131239\\adapter",
+  "train_snapshot_ids": [
+    "ds_0003_iter01"
+  ],
+  "metrics": {
+    "train_loss": 2.4177675619721413,
+    "steps": 32,
+    "num_samples": 524
+  },
+  "data_lineage": {
+    "provider": "simulation",
+    "simulation_id": "sim_0001_term_to_def",
+    "injected_split": "iter01",
+    "max_iterations": 4,
+    "ui_asset_ref": "experiments/exp_0002_solon_pair_train/assets_ui/sim_0001_term_to_def",
+    "incoming_file": "data_sources/exp_0002_solon_pair_train/incoming/batch.jsonl",
+    "source_train_file": "staging_data/simulations/sim_0001_term_to_def/train/iter01.train.jsonl"
+  }
+}

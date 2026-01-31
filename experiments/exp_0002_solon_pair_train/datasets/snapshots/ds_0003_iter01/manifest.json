@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "ds_0003_iter01",
+  "exp_id": "exp_0002_solon_pair_train",
+  "created_at": "2026-01-30T13:12:39Z",
+  "intent": "incremental",
+  "delta_of": null,
+  "source": {
+    "type": "simulation",
+    "incoming_file": "data_sources/exp_0002_solon_pair_train/incoming/batch.jsonl",
+    "meta": {
+      "schema_version": "1.0",
+      "exp_id": "exp_0002_solon_pair_train",
+      "provider": "simulation",
+      "simulation_id": "sim_0001_term_to_def",
+      "split": "iter01",
+      "max_iterations": 4,
+      "ui_asset_ref": "experiments/exp_0002_solon_pair_train/assets_ui/sim_0001_term_to_def",
+      "created_at": "2026-01-30T13:12:25Z",
+      "source_train_file": "staging_data/simulations/sim_0001_term_to_def/train/iter01.train.jsonl",
+      "incoming_file": "data_sources/exp_0002_solon_pair_train/incoming/batch.jsonl"
+    }
+  },
+  "task": {
+    "type": "embedding",
+    "format": "pair",
+    "text_fields": {
+      "query": "query",
+      "positive": "positive"
+    }
+  },
+  "canonical": {
+    "format": "jsonl",
+    "data_files": [
+      "data/train.jsonl"
+    ],
+    "stats": {
+      "num_samples": 524
+    }
+  },
+  "fingerprint": {
+    "algo": "sha256",
+    "value": "e31a0f9dd776c9dc228c0fae9fcba0c4617609f851c6f9ceea966083165eb231"
+  },
+  "state": "COMMITTED"
+}

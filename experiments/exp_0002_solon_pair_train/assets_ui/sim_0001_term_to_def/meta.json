@@ -1,0 +1,20 @@
+{
+  "sim_id": "sim_0001_term_to_def",
+  "input_rich_path": "staging_data\\admin_multi_term\\admin_pairs_term_to_def.rich.jsonl",
+  "num_rows_total": 5237,
+  "n_iters": 4,
+  "initial_ratio": 0.6,
+  "shuffle": true,
+  "seed": 42,
+  "outputs": {
+    "ui_dir": "staging_data\\simulations\\sim_0001_term_to_def\\ui",
+    "train_dir": "staging_data\\simulations\\sim_0001_term_to_def\\train"
+  },
+  "counts": {
+    "initial": 3143,
+    "iter01": 524,
+    "iter02": 524,
+    "iter03": 523,
+    "iter04": 523
+  }
+}

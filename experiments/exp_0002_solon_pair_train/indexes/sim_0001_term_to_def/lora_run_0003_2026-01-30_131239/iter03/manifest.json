@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "model_ref": "lora_run_0003_2026-01-30_131239",
+  "base_model_ref": "OrdalieTech/Solon-embeddings-large-0.1",
+  "adapter_dir": "experiments/exp_0002_solon_pair_train/models/lora_adapters/lora_run_0003_2026-01-30_131239/adapter",
+  "subset": "iter03",
+  "ui_file": "experiments/exp_0002_solon_pair_train/assets_ui/sim_0001_term_to_def/ui/iter03.rich.jsonl",
+  "ui_sha256": "7a72ce51e4122dfc61b80255237dbf010a1458f9163d995253d7db9db2d85332",
+  "num_docs": 523,
+  "schema": {
+    "query_field": "query",
+    "text_field": "positive",
+    "label_field": "term",
+    "id_field": "source_row_id",
+    "keep_fields": [
+      "term",
+      "query",
+      "positive",
+      "definition",
+      "prompt",
+      "pair_mode",
+      "k",
+      "source_row_id"
+    ]
+  },
+  "build": {
+    "batch_size": 16,
+    "max_length": 256,
+    "normalize": true,
+    "metric": "ip",
+    "device": "cpu",
+    "precision": "fp32"
+  }
+}
