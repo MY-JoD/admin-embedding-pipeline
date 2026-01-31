@@ -13,3 +13,6 @@ env/
 
 experiments/
 model_staging/
+
+old_infos/
+data_sources/
