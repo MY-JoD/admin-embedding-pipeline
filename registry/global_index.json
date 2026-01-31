@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "last_successful_run_by_exp": {
+    "exp_0001_solon_pair": "run_0004_2026-01-28_095501",
+    "exp_0002_solon_pair_train": "run_0003_2026-01-30_131239"
+  },
+  "last_model_by_exp": {
+    "exp_0002_solon_pair_train": "lora_run_0003_2026-01-30_131239"
+  },
+  "last_snapshot_by_exp": {}
+}
