@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "exp_id": "exp_0001_solon_pair",
+  "provider": "simulation",
+  "simulation_id": "sim_0001_term_to_def",
+  "max_iterations": 4,
+  "next_split": "iter04",
+  "done": false,
+  "history": [
+    {
+      "split": "initial",
+      "injected_at": "2026-01-28T05:14:51Z",
+      "incoming": "batch.jsonl"
+    },
+    {
+      "split": "iter01",
+      "injected_at": "2026-01-28T09:54:32Z",
+      "incoming": "batch.jsonl"
+    },
+    {
+      "split": "iter02",
+      "injected_at": "2026-01-29T10:21:31Z",
+      "incoming": "batch.jsonl"
+    },
+    {
+      "split": "iter03",
+      "injected_at": "2026-01-29T10:47:13Z",
+      "incoming": "batch.jsonl"
+    }
+  ]
+}

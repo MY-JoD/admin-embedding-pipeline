@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "exp_id": "exp_0002_solon_pair_train",
+  "provider": "simulation",
+  "simulation_id": "sim_0001_term_to_def",
+  "split": "iter01",
+  "max_iterations": 4,
+  "ui_asset_ref": "experiments/exp_0002_solon_pair_train/assets_ui/sim_0001_term_to_def",
+  "created_at": "2026-01-30T13:12:25Z",
+  "source_train_file": "staging_data/simulations/sim_0001_term_to_def/train/iter01.train.jsonl",
+  "incoming_file": "data_sources/exp_0002_solon_pair_train/incoming/batch.jsonl"
+}
