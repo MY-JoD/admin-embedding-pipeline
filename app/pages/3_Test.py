@@ -9,14 +9,38 @@ import torch
 import faiss
 from sentence_transformers import SentenceTransformer
 
-# =========================
 # CONFIG
 # =========================
-DEFAULT_JSONL = "data-0/Dataset_Bercy_4k_lines.jsonl"
+
+from pathlib import Path
+
+
+ROOT = Path(".")
+
+DEFAULT_JSONL = ROOT / "data-0/Dataset_Bercy_4k_lines.jsonl"
+LOCAL_DIR = ROOT / "models_ft/merged"
+# =========================
+# DEFAULT_JSONL = "data-0/Dataset_Bercy_4k_lines.jsonl"
+# LOCAL_DIR = Path("./models/merged")
+
+
+# checks utiles
+if not DEFAULT_JSONL.exists():
+    raise FileNotFoundError(f"JSONL introuvable: {DEFAULT_JSONL}")
+
+if not LOCAL_DIR.exists():
+    raise FileNotFoundError(f"Dossier modèle introuvable: {LOCAL_DIR}")
+
+DEFAULT_JSONL = "./data-0/Dataset_Bercy_4k_lines.jsonl"
 LOCAL_DIR = Path("./models_ft/merged")
 
+# BASE_DIR = Path(__file__).resolve().parent
+# DEFAULT_JSONL = str(BASE_DIR / "data-0" / "Dataset_Bercy_4k_lines.jsonl")
+# LOCAL_DIR = BASE_DIR / "models" / "merged"
+
+
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-BATCH_SIZE = 32
+BATCH_SIZE = 8
 MAX_LENGTH = 512
 
 TASK = "Retrieve the definition of an administrative acronym or term."
