@@ -1,0 +1,16 @@
+{"query": "RTO", "positive": "Le RTO (Recovery Time Objective) est le délai maximal acceptable de rétablissement d’un service après incident."}
+{"query": "RPO", "positive": "Le RPO (Recovery Point Objective) est la perte de données maximale acceptable, exprimée en durée entre deux sauvegardes."}
+{"query": "IAM", "positive": "L’IAM (Identity and Access Management) couvre la gestion des identités, des comptes et des droits d’accès."}
+{"query": "MCO", "positive": "Le MCO est le maintien en condition opérationnelle : actions pour garantir disponibilité, performance et sécurité d’un service."}
+{"query": "RH", "positive": "Ressources humaines"}
+{"query": "CISIRH", "positive": "Centre interministériel de services informatiques relatifs aux ressources humaines."}
+{"query": "IGF", "positive": "Inspection générale des finances"}
+{"query": "AFA", "positive": "Agence française anticorruption"}
+{"query": "schéma directeur des systèmes d’information", "positive": "schéma directeur des systèmes d’information : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "urbanisation du système d’information", "positive": "urbanisation du système d’information : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}
+{"query": "architecture applicative", "positive": "architecture applicative : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}
+{"query": "architecture technique", "positive": "architecture technique : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}
+{"query": "gouvernance des données", "positive": "gouvernance des données : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "protection des données personnelles", "positive": "protection des données personnelles : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}
+{"query": "conformité réglementaire", "positive": "conformité réglementaire : ensemble de règles, d’acteurs et de pratiques visant à encadrer et piloter une activité interne (SI, RH, achats) de manière cohérente et contrôlable."}
+{"query": "contrôle interne", "positive": "contrôle interne : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}

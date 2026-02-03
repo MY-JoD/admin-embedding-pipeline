@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "model_ref": "lora_run_0002_2026-02-02_221711",
+  "base_model_ref": "intfloat/multilingual-e5-large-instruct",
+  "adapter_dir": "experiments/exp_UI_0001_demo/models/lora_adapters/lora_run_0002_2026-02-02_221711/adapter",
+  "subset": "initial",
+  "ui_file": "experiments/exp_UI_0001_demo/assets_ui/sim_0001_term_to_def/ui/initial.rich.jsonl",
+  "ui_sha256": "babb5ca548be0dff4f3ef52dff2449590656d0966d5e843e3664ecc696b57ca2",
+  "num_docs": 16,
+  "schema": {
+    "query_field": "query",
+    "text_field": "positive",
+    "label_field": "cluster_id",
+    "id_field": "row_index",
+    "keep_fields": []
+  },
+  "build": {
+    "batch_size": 16,
+    "max_length": 256,
+    "normalize": true,
+    "metric": "ip",
+    "device": "cpu",
+    "precision": "fp32"
+  }
+}

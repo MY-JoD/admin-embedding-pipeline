@@ -123,8 +123,26 @@ class Mapping:
 def pick(row: Dict[str, Any], key: str) -> Any:
     return row.get(key)
 
+def build_outputs(rows: List[Dict[str, Any]], mapping: Mapping):
+    train_rows = []
+    ui_rows = []
 
-def build_outputs(
+    for r in rows:
+        q = r.get(mapping.query_field)
+        p = r.get(mapping.positive_field)
+        if q is None or p is None:
+            continue
+
+        train_rows.append({"query": q, "positive": p})
+
+        ui = dict(r)  # garde tout
+        ui["query"] = q
+        ui["positive"] = p
+        ui_rows.append(ui)
+
+    return train_rows, ui_rows
+
+def build_outputs2(
     rows: List[Dict[str, Any]],
     mapping: Mapping,
 ) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
@@ -238,6 +256,15 @@ def main():
     # input
     input_path = Path(args.input)
     rows = load_rows_any(input_path)
+   
+    # validation rapide: on exige query/positive dans le dataset
+    missing = []
+    for field in [query_field, positive_field]:
+        if not any(field in r for r in rows):
+            missing.append(field)
+    if missing:
+        raise SystemExit(f"dataset invalide: champs manquants: {missing}. Attendu au minimum query/positive.")
+    
     train_rows, ui_rows = build_outputs(rows, mapping)
 
     if not train_rows:

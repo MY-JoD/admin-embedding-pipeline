@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "model_id": "lora_run_0001_2026-02-02_221028",
+  "exp_id": "exp_UI_0001_demo",
+  "run_id": "run_0001_2026-02-02_221028",
+  "created_at": "2026-02-02T22:11:37Z",
+  "base_model_ref": "intfloat/multilingual-e5-large-instruct",
+  "base_model_local_dir": "model_staging\\base_models\\multilingual-e5-large-instruct",
+  "strategy": "chain",
+  "parent_model_id": null,
+  "adapter_dir": "experiments\\exp_UI_0001_demo\\models\\lora_adapters\\lora_run_0001_2026-02-02_221028\\adapter",
+  "train_snapshot_ids": [
+    "ds_0001_initial"
+  ],
+  "metrics": {
+    "train_loss": 0.0,
+    "steps": 0,
+    "num_samples": 16
+  },
+  "data_lineage": {
+    "provider": "ui_upload",
+    "simulation_id": null,
+    "injected_split": "initial",
+    "max_iterations": null,
+    "ui_asset_ref": "sim_0001_term_to_def",
+    "incoming_file": "data_sources/exp_UI_0001_demo/incoming/batch.jsonl",
+    "source_train_file": null
+  }
+}

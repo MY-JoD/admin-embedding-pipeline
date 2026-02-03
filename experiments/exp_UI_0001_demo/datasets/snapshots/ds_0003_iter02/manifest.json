@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "ds_0003_iter02",
+  "exp_id": "exp_UI_0001_demo",
+  "created_at": "2026-02-03T01:53:28Z",
+  "intent": "incremental",
+  "delta_of": null,
+  "source": {
+    "type": "ui_upload",
+    "incoming_file": "data_sources/exp_UI_0001_demo/incoming/batch.jsonl",
+    "meta": {
+      "provider": "ui_upload",
+      "exp_id": "exp_UI_0001_demo",
+      "asset_id": "sim_0001_term_to_def",
+      "split": "iter02",
+      "incoming_file": "data_sources/exp_UI_0001_demo/incoming/batch.jsonl",
+      "num_samples": 16,
+      "ui_asset_ref": "sim_0001_term_to_def",
+      "schema": {
+        "query_field": "anchor",
+        "positive_field": "positive",
+        "label_field": "cluster_id",
+        "id_field": "row_index"
+      }
+    }
+  },
+  "task": {
+    "type": "embedding",
+    "format": "pair",
+    "text_fields": {
+      "query": "query",
+      "positive": "positive"
+    }
+  },
+  "canonical": {
+    "format": "jsonl",
+    "data_files": [
+      "data/train.jsonl"
+    ],
+    "stats": {
+      "num_samples": 16
+    }
+  },
+  "fingerprint": {
+    "algo": "sha256",
+    "value": "c30a507e4ff3b590e3b87fcd65fa57d0918c2c141c0eafadce356c03e52df198"
+  },
+  "state": "COMMITTED"
+}

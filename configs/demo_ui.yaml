@@ -1,0 +1,189 @@
+# =========================
+# IDENTITÉ EXPÉRIENCE
+# =========================
+exp_id: exp_UI_0001_demo
+description: "Demo UI Fine-tuning incrémental embedding avec LoRA sur multilingual-e5-large-instruct."
+
+# =========================
+# MODÈLE
+# =========================
+model:
+  base_model_ref: "intfloat/multilingual-e5-large-instruct"
+  tokenizer_ref: null
+
+  # stratégie d'incrémental: base -> dernier adapter LoRA
+  strategy: "chain"                  # chain | base_only | fixed_adapter
+  precision: "bf16"                  # bf16 | fp16 | fp32
+  device: "cuda"                     # cuda | cpu
+
+  # gestion local / download
+  local_store_dir: "model_staging/base_models"
+  prefer_local: true                 # charge d'abord depuis local_store_dir/local_id si présent
+  allow_download: true               # autorise HF download si absent en local
+  local_id: "multilingual-e5-large-instruct"
+
+  # sentence-transformers (si ton trainer utilise ST)
+  sentence_transformers:
+    enabled: true
+    trust_remote_code: true
+    max_seq_length: 512
+
+# =========================
+# TÂCHE EMBEDDING
+# =========================
+task:
+  type: "embedding"
+  format: "pair"                     # pair: query/positive
+  text_fields:
+    query: "query"
+    positive: "positive"
+
+# =========================
+# UI / ASSETS
+# =========================
+ui:
+  asset_dir: "experiments/{exp_id}/assets_ui"
+
+# =========================
+# FEEDER (optionnel si tu passes par UI upload)
+# =========================
+feeder:
+  enabled: false                     # en UI upload, tu peux laisser false
+  provider: "ui_upload"              # simulation | ui_upload | manual
+  batch_filename: "batch.jsonl"
+
+  simulation:
+    sim_id: "sim_0001_term_to_def"
+    root_dir: "staging_data/simulations"
+    copy_ui_once: true
+
+# =========================
+# DONNÉES
+# =========================
+data:
+  incoming_dir: "data_sources/{exp_id}/incoming"
+  canonical_format: "jsonl"
+  seed: 42
+
+  # politique d'incrémental
+  policy: "delta_plus_replay"        # delta_only | delta_plus_replay
+  replay_ratio: 0.2                  # utilisé si replay activé
+
+# =========================
+# ENTRAÎNEMENT (clé attendue par admin_launch)
+# =========================
+train:
+  enabled: true
+  epochs: 1
+  batch_size: 32
+  max_seq_length: 512
+  lr: 5e-5
+  warmup_ratio: 0.1
+  precision: "bf16"
+  device: "cuda"
+  save_strategy: "epoch"
+  save_total_limit: 1
+  gradient_accumulation_steps: 1
+  shuffle: false                     # correspond à ton NoShuffleTrainer
+  logging_steps: 50
+
+# =========================
+# ENTRAÎNEMENT (alias pour compat)
+# =========================
+training:
+  enabled: true
+  epochs: 1
+  batch_size: 32
+  max_seq_length: 512
+  lr: 5e-5
+  warmup_ratio: 0.1
+  precision: "bf16"
+  device: "cuda"
+  save_strategy: "epoch"
+  save_total_limit: 1
+  gradient_accumulation_steps: 1
+  shuffle: false
+  logging_steps: 50
+
+# =========================
+# LORA
+# =========================
+lora:
+  enabled: true
+  task_type: "feature_extraction"    # PEFT TaskType.FEATURE_EXTRACTION
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  bias: "none"
+  target_modules: ["query", "key", "value"]
+
+  # sorties
+  output_dir_lora: "adapters/e5_lora_config4_qkv_hn_adapter_v2"
+  output_dir_merged: "final_models/e5_large_finetuned_config4_merged_v2"
+  merge_and_unload: true
+
+# =========================
+# HARD NEGATIVES / TRI DATASET
+# =========================
+data_strategy:
+  deduplicate_on: "query"            # équivalent "keep_first" sur anchor/query
+  sort_by: "cluster_id"              # pour hard negatives via NoShuffleTrainer
+  require_field_for_sort: true
+
+# =========================
+# REPLAY BUFFER (forcé)
+# =========================
+replay:
+  enabled: true
+  mode: "ratio"                      # ratio | fixed | full_mix | initial_only
+  ratio: 0.2
+  source: "initial_plus_recent"      # all_previous | initial_plus_recent | recent_only
+  recent_k: 2
+  per_snapshot_cap: 0.5
+  seed: 42
+
+# =========================
+# INDEXATION
+# =========================
+indexing:
+  enabled: true
+
+  ui:
+    sim_id: "sim_0001_term_to_def"
+    ui_dir: "experiments/{exp_id}/assets_ui/{sim_id}/ui"
+    meta_path: "experiments/{exp_id}/assets_ui/{sim_id}/meta.json"
+    file_suffix: ".rich.jsonl"
+    subsets: null                    # null => auto-discovery
+
+  schema:
+    query_field: "query"
+    text_field: "positive"
+    label_field: "term"
+    id_field: "source_row_id"
+    keep_fields: []                  # vide => "garder tout" (recommandé pour ta contrainte)
+
+  build:
+    batch_size: 64
+    max_length: 256
+    normalize: true
+    metric: "ip"
+    device: "cpu"                    # safe si pas de CUDA
+    precision: "fp32"
+
+# =========================
+# TRACKING
+# =========================
+tracking:
+  local:
+    enabled: true
+  wandb:
+    enabled: false
+    project: null
+    run_name: null
+
+# =========================
+# RUNTIME
+# =========================
+runtime:
+  resume_if_interrupted: true
+  fail_fast: true

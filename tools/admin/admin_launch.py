@@ -1,0 +1,330 @@
+from __future__ import annotations
+
+import argparse
+import json
+import shutil
+import subprocess
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Dict, Iterable, List, Optional
+
+import yaml
+import sys
+
+# -------------------------
+# I/O
+# -------------------------
+def read_yaml(path: Path) -> Dict[str, Any]:
+    return yaml.safe_load(path.read_text(encoding="utf-8"))
+
+
+def write_yaml(path: Path, obj: Dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(yaml.safe_dump(obj, sort_keys=False, allow_unicode=True), encoding="utf-8")
+
+
+def write_json(path: Path, obj: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def write_jsonl(path: Path, rows: Iterable[Dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
+
+
+def iter_jsonl(path: Path) -> Iterable[Dict[str, Any]]:
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            yield json.loads(line)
+
+
+def load_dataset_any(path: Path) -> List[Dict[str, Any]]:
+    # support jsonl ou json (list)
+    if path.suffix.lower() == ".jsonl":
+        return list(iter_jsonl(path))
+    if path.suffix.lower() == ".json":
+        obj = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(obj, list):
+            return obj
+        raise SystemExit("JSON invalide: attendu une liste d'objets")
+    raise SystemExit("Dataset invalide: attendu .jsonl ou .json")
+
+
+# -------------------------
+# Config validation (rapide)
+# -------------------------
+@dataclass
+class UISchema:
+    query_field: str
+    positive_field: str
+    label_field: str
+    id_field: str
+
+
+def require(cfg: Dict[str, Any], dotted: str) -> Any:
+    cur: Any = cfg
+    for part in dotted.split("."):
+        if not isinstance(cur, dict) or part not in cur:
+            raise SystemExit(f"Config invalide: champ manquant: {dotted}")
+        cur = cur[part]
+    return cur
+
+
+def load_and_validate_config(cfg_path: Path) -> Dict[str, Any]:
+    cfg = read_yaml(cfg_path)
+
+    # minimum
+    require(cfg, "exp_id")
+    require(cfg, "model.base_model_ref")
+    require(cfg, "task.type")
+    require(cfg, "task.format")
+    require(cfg, "task.text_fields.query")
+    require(cfg, "task.text_fields.positive")
+    require(cfg, "data.incoming_dir")
+    require(cfg, "ui.asset_dir")
+    require(cfg, "train.enabled")
+
+    return cfg
+
+
+# -------------------------
+# Prepare iteration: incoming + assets_ui
+# -------------------------
+def resolve_tpl(s: str, exp_id: str) -> str:
+    return s.replace("{exp_id}", exp_id)
+
+
+def prepare_iteration(
+    cfg: Dict[str, Any],
+    dataset_path: Path,
+    asset_id: str,
+    split: str,                  # "initial" ou "iter01" etc.
+    schema: UISchema,
+    force: bool,
+) -> Dict[str, Any]:
+    exp_id = cfg["exp_id"]
+
+    # 1) charger dataset
+    rows = load_dataset_any(dataset_path)
+    if not rows:
+        raise SystemExit("Dataset vide")
+
+    # 2) validation rapide dataset: query/positive obligatoires
+    qf = schema.query_field
+    pf = schema.positive_field
+
+    # on valide sur la présence au moins sur 1 ligne
+    if not any(qf in r and r.get(qf) is not None for r in rows):
+        raise SystemExit(f"Dataset invalide: champ query manquant: {qf}")
+    if not any(pf in r and r.get(pf) is not None for r in rows):
+        raise SystemExit(f"Dataset invalide: champ positive manquant: {pf}")
+
+    # 3) construire train rows (query/positive only) + ui rows (keep all)
+    train_rows: List[Dict[str, Any]] = []
+    ui_rows: List[Dict[str, Any]] = []
+
+    for r in rows:
+        q = r.get(qf)
+        p = r.get(pf)
+        if q is None or p is None:
+            continue
+
+        train_rows.append({"query": q, "positive": p})
+
+        ui = dict(r)            # keep all
+        ui["query"] = q         # normalise clé query
+        ui["positive"] = p      # normalise clé positive
+        ui_rows.append(ui)
+
+    if not train_rows:
+        raise SystemExit("Aucune ligne valide (query/positive)")
+
+    # 4) incoming paths
+    incoming_dir_tpl = cfg["data"]["incoming_dir"]
+    incoming_dir = Path(resolve_tpl(incoming_dir_tpl, exp_id))
+    incoming_dir.mkdir(parents=True, exist_ok=True)
+
+    batch_path = incoming_dir / "batch.jsonl"
+    meta_path = incoming_dir / "batch.jsonl.meta.json"
+
+    if batch_path.exists() and not force:
+        raise SystemExit("incoming/batch.jsonl existe déjà: active force pour remplacer")
+
+    if force and batch_path.exists():
+        batch_path.unlink(missing_ok=True)
+        meta_path.unlink(missing_ok=True)
+
+    write_jsonl(batch_path, train_rows)
+
+    incoming_meta = {
+        "provider": "ui_upload",
+        "exp_id": exp_id,
+        "asset_id": asset_id,
+        "split": split,
+        "incoming_file": str(batch_path).replace("\\", "/"),
+        "num_samples": len(train_rows),
+        "ui_asset_ref": f"{asset_id}",
+        "schema": {
+            "query_field": schema.query_field,
+            "positive_field": schema.positive_field,
+            "label_field": schema.label_field,
+            "id_field": schema.id_field,
+        },
+    }
+    write_json(meta_path, incoming_meta)
+
+    # 5) assets_ui paths
+    asset_dir_tpl = cfg["ui"]["asset_dir"]
+    asset_root = Path(resolve_tpl(asset_dir_tpl, exp_id)) / asset_id
+    ui_dir = asset_root / "ui"
+    ui_dir.mkdir(parents=True, exist_ok=True)
+
+    ui_file = ui_dir / f"{split}.rich.jsonl"
+    
+    if ui_file.exists() and not force:
+        raise SystemExit(f"UI file existe déjà ({ui_file.name}): active force pour remplacer")
+    
+    write_jsonl(ui_file, ui_rows)
+
+    asset_meta = {
+        "schema_version": "1.0",
+        "asset_id": asset_id,
+        "exp_id": exp_id,
+        "splits": sorted([p.stem for p in ui_dir.glob("*.rich.jsonl")]),
+        "ui_dir": str(ui_dir).replace("\\", "/"),
+        "schema": incoming_meta["schema"],
+    }
+    write_json(asset_root / "meta.json", asset_meta)
+
+    return {
+        "incoming_batch": str(batch_path).replace("\\", "/"),
+        "incoming_meta": str(meta_path).replace("\\", "/"),
+        "ui_file": str(ui_file).replace("\\", "/"),
+        "num_train": len(train_rows),
+        "num_ui": len(ui_rows),
+    }
+
+
+# -------------------------
+# Run steps
+# -------------------------
+
+def run_cmd(cmd: List[str]) -> None:
+    if cmd and cmd[0] == "python":
+        cmd[0] = sys.executable
+    print("\n[CMD] " + " ".join(cmd))
+    p = subprocess.run(cmd, capture_output=False)
+    if p.returncode != 0:
+        raise SystemExit(f"Commande échouée (code={p.returncode})")
+
+def main():
+    ap = argparse.ArgumentParser()
+
+    # config: soit tu upload, soit tu sélectionnes une existante
+    ap.add_argument("--exp-id", required=True)
+    ap.add_argument("--config-upload", default=None, help="chemin vers un yaml à enregistrer dans configs/<exp_id>.yaml")
+    ap.add_argument("--config-path", default=None, help="chemin vers yaml existant. Si absent: configs/<exp_id>.yaml")
+
+    # dataset
+    ap.add_argument("--dataset", required=True, help="dataset .jsonl ou .json")
+    ap.add_argument("--asset-id", required=True, help="id UI (namespace). ex: sim_0001_term_to_def")
+    ap.add_argument("--split", required=True, help="initial | iter01 | iter02 ... (choisi dans l'interface)")
+    ap.add_argument("--force", action="store_true")
+
+    # schema (interface)
+    ap.add_argument("--query-field", default="query")
+    ap.add_argument("--positive-field", default="positive")
+    ap.add_argument("--label-field", default="term")
+    ap.add_argument("--id-field", default="source_row_id")
+
+    # pipeline toggles
+    ap.add_argument("--no-train", action="store_true")
+    ap.add_argument("--no-index", action="store_true")
+
+    # indexing args (optionnels, sinon valeurs “safe”)
+    ap.add_argument("--index-device", default="cpu")
+    ap.add_argument("--index-precision", default="fp32")
+    ap.add_argument("--index-batch-size", type=int, default=16)
+    ap.add_argument("--index-max-length", type=int, default=256)
+
+    args = ap.parse_args()
+
+    exp_id = args.exp_id
+    cfg_store_path = Path("configs") / f"{exp_id}.yaml"
+
+    # 1) enregistrer config si upload
+    if args.config_upload:
+        src = Path(args.config_upload)
+        if not src.exists():
+            raise SystemExit(f"config_upload introuvable: {src}")
+        # on remplace systématiquement configs/<exp_id>.yaml
+        cfg_store_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(src, cfg_store_path)
+
+    # 2) choisir config_path
+    cfg_path = Path(args.config_path) if args.config_path else cfg_store_path
+    if not cfg_path.exists():
+        raise SystemExit(f"Config introuvable: {cfg_path}")
+
+    # 3) valider config
+    cfg = load_and_validate_config(cfg_path)
+
+
+    cfg_exp = cfg.get("exp_id")
+    if cfg_exp and cfg_exp != exp_id:
+        raise SystemExit(f"Incohérence exp_id: CLI={exp_id} vs YAML={cfg_exp}")
+
+    (Path("experiments") / exp_id).mkdir(parents=True, exist_ok=True)
+
+    # 4) préparer itération (incoming + ui)
+    schema = UISchema(
+        query_field=args.query_field,
+        positive_field=args.positive_field,
+        label_field=args.label_field,
+        id_field=args.id_field,
+    )
+
+
+    prep = prepare_iteration(
+        cfg=cfg,
+        dataset_path=Path(args.dataset),
+        asset_id=args.asset_id,
+        split=args.split,
+        schema=schema,
+        force=args.force,
+    )
+    print("\n[PREP] OK")
+    print(json.dumps(prep, indent=2, ensure_ascii=False))
+
+    # 5) train (orchestrator)
+    if not args.no_train:
+        run_cmd([sys.executable, "-m", "src.pipeline.orchestrator", "--config", str(cfg_path)])
+
+    # 6) build indexes
+    if not args.no_index:
+        base_model_ref = cfg["model"]["base_model_ref"]
+        run_cmd([
+            sys.executable, "tools/indexing/build_indexes.py",
+            "--exp-id", exp_id,
+            "--sim-id", args.asset_id,
+            "--base-model-ref", base_model_ref,
+            "--device", args.index_device,
+            "--precision", args.index_precision,
+            "--batch-size", str(args.index_batch_size),
+            "--max-length", str(args.index_max_length),
+            "--text-field", "positive",
+            "--label-field", args.label_field,
+            "--id-field", args.id_field,
+        ])
+
+    print("\n[DONE] admin launch finished")
+
+
+if __name__ == "__main__":
+    main()

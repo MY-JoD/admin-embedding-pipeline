@@ -1,0 +1,16 @@
+{"query": "RGPD", "positive": "Le RGPD est le Règlement général sur la protection des données, règlement de l’UE encadrant le traitement des données personnelles."}
+{"query": "RGS", "positive": "Le RGS est le Référentiel général de sécurité, cadre français définissant des règles de sécurité pour les services numériques publics."}
+{"query": "CNIL", "positive": "La CNIL est la Commission nationale de l’informatique et des libertés, autorité française de protection des données."}
+{"query": "ANSSI", "positive": "L’ANSSI est l’Agence nationale de la sécurité des systèmes d’information, autorité nationale en cybersécurité (prévention, réponse, recommandations)."}
+{"query": "PCA", "positive": "Le PCA est le Plan de continuité d’activité, organisation permettant de maintenir les activités essentielles en cas de crise."}
+{"query": "PRA", "positive": "Le PRA est le Plan de reprise d’activité, organisation permettant de rétablir les services après un incident majeur."}
+{"query": "BCP", "positive": "Le BCP (Business Continuity Plan) est un plan de continuité d’activité visant à maintenir les activités critiques en situation de crise."}
+{"query": "DRP", "positive": "Le DRP (Disaster Recovery Plan) est un plan de reprise visant à restaurer les systèmes et services après un sinistre."}
+{"query": "gestion des incidents", "positive": "gestion des incidents : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "gestion des problèmes", "positive": "gestion des problèmes : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}
+{"query": "gestion des changements", "positive": "gestion des changements : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}
+{"query": "gestion des configurations", "positive": "gestion des configurations : ensemble de règles, d’acteurs et de pratiques visant à encadrer et piloter une activité interne (SI, RH, achats) de manière cohérente et contrôlable."}
+{"query": "catalogue de services", "positive": "catalogue de services : ensemble de règles, d’acteurs et de pratiques visant à encadrer et piloter une activité interne (SI, RH, achats) de manière cohérente et contrôlable."}
+{"query": "niveau de service", "positive": "niveau de service : ensemble de règles, d’acteurs et de pratiques visant à encadrer et piloter une activité interne (SI, RH, achats) de manière cohérente et contrôlable."}
+{"query": "pilotage de la performance", "positive": "pilotage de la performance : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "indicateurs de performance", "positive": "indicateurs de performance : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}

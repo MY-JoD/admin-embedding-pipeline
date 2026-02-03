@@ -1,0 +1,89 @@
+dvc init
+git add .dvc .dvcignore .gitignore
+git commit -m "Initialize DVC"
+
+-------------------------------
+dvc add data/raw
+git add data/raw.dvc .gitignore
+git commit -m "Add raw dataset"
+dvc push
+
+------------------------------
+dvc add models/model_v1.pt
+git add models/model_v1.pt.dvc
+git commit -m "Add trained model v1"
+
+
+------------------------------
+'changer de modèle'
+git checkout <commit>
+dvc checkout
+------------------------------
+dvc remote add -d storage gs://...
+dvc push
+-------------------------------
+dvc run \
+  -n train_model \
+  -d src/train.py \
+  -d data/raw \
+  -o models/model.pt \
+  python src/train.py
+
+Ce que DVC comprend :
+si data/raw change → il faut réentraîner
+si train.py change → il faut réentraîner
+sinon → pas besoin de recalculer
+Résultat :
+un fichier dvc.yaml
+un fichier dvc.lock
+Ces fichiers décrivent l’expérience exacte.
+------------------------------
+dvc repro
+DVC :
+vérifie ce qui a changé
+relance uniquement les étapes nécessaires
+Avantage énorme :
+pas de ré-entraînement inutile
+pipeline déterministe
+reproductible à 100 %
+------------------------------
+check de versions et donnée
+Commit A :
+data hash = AAA
+model hash = 111
+
+Commit B :
+data hash = BBB
+model hash = 222
+
+Quand tu fais :
+git checkout A
+dvc checkout
+
+Tu récupères :
+data AAA
+model 111
+
+----------------------
+Développeur A :
+dvc add data/new_data
+git commit
+dvc push
+
+Développeur B :
+git pull
+dvc pull
+---------------------
+GitHub
+  ↓ (push)
+GitHub Actions (CI)
+  ↓
+VM / runner
+  ↓
+dvc pull (GCS)
+  ↓
+train / eval
+  ↓
+dvc push (GCS)
+----------------------------
+

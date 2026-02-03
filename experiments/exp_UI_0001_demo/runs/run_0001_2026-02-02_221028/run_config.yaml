@@ -1,0 +1,62 @@
+schema_version: '1.0'
+run_id: run_0001_2026-02-02_221028
+exp_id: exp_UI_0001_demo
+created_at: '2026-02-02T22:10:28Z'
+dry_run: false
+inputs:
+  parent_model_ref: intfloat/multilingual-e5-large-instruct
+  train_snapshot_ids:
+  - ds_0001_initial
+  eval_snapshot_ids: []
+task:
+  type: embedding
+  format: pair
+  text_fields:
+    query: query
+    positive: positive
+training:
+  enabled: true
+  epochs: 1
+  batch_size: 32
+  max_seq_length: 512
+  lr: 5e-5
+  warmup_ratio: 0.1
+  precision: bf16
+  device: cuda
+  save_strategy: epoch
+  save_total_limit: 1
+  gradient_accumulation_steps: 1
+  shuffle: false
+  logging_steps: 50
+lora:
+  enabled: true
+  task_type: feature_extraction
+  r: 8
+  alpha: 16
+  dropout: 0.05
+  bias: none
+  target_modules:
+  - query
+  - key
+  - value
+  output_dir_lora: adapters/e5_lora_config4_qkv_hn_adapter_v2
+  output_dir_merged: final_models/e5_large_finetuned_config4_merged_v2
+  merge_and_unload: true
+tracking:
+  local:
+    enabled: true
+  wandb:
+    enabled: false
+    project: null
+    run_name: null
+artifacts:
+  run_dir: experiments\exp_UI_0001_demo\runs\run_0001_2026-02-02_221028
+  artifacts_dir: experiments\exp_UI_0001_demo\runs\run_0001_2026-02-02_221028\artifacts
+data_lineage:
+  provider: ui_upload
+  simulation_id: null
+  injected_split: initial
+  max_iterations: null
+  ui_asset_ref: sim_0001_term_to_def
+  incoming_file: data_sources/exp_UI_0001_demo/incoming/batch.jsonl
+  source_train_file: null

@@ -1,0 +1,15 @@
+{
+  "provider": "ui_upload",
+  "exp_id": "exp_UI_0001_demo",
+  "asset_id": "sim_0001_term_to_def",
+  "split": "iter01",
+  "incoming_file": "data_sources/exp_UI_0001_demo/incoming/batch.jsonl",
+  "num_samples": 16,
+  "ui_asset_ref": "sim_0001_term_to_def",
+  "schema": {
+    "query_field": "anchor",
+    "positive_field": "positive",
+    "label_field": "cluster_id",
+    "id_field": "row_index"
+  }
+}

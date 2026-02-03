@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "snapshot_id": "ds_0001_initial",
+  "exp_id": "exp_UI_0001_demo",
+  "created_at": "2026-02-02T22:10:28Z",
+  "intent": "initial",
+  "delta_of": null,
+  "source": {
+    "type": "ui_upload",
+    "incoming_file": "data_sources/exp_UI_0001_demo/incoming/batch.jsonl",
+    "meta": {
+      "provider": "ui_upload",
+      "exp_id": "exp_UI_0001_demo",
+      "asset_id": "sim_0001_term_to_def",
+      "split": "initial",
+      "incoming_file": "data_sources/exp_UI_0001_demo/incoming/batch.jsonl",
+      "num_samples": 16,
+      "ui_asset_ref": "sim_0001_term_to_def",
+      "schema": {
+        "query_field": "anchor",
+        "positive_field": "positive",
+        "label_field": "cluster_id",
+        "id_field": "row_index"
+      }
+    }
+  },
+  "task": {
+    "type": "embedding",
+    "format": "pair",
+    "text_fields": {
+      "query": "query",
+      "positive": "positive"
+    }
+  },
+  "canonical": {
+    "format": "jsonl",
+    "data_files": [
+      "data/train.jsonl"
+    ],
+    "stats": {
+      "num_samples": 16
+    }
+  },
+  "fingerprint": {
+    "algo": "sha256",
+    "value": "075e51dc5f1e2c979b5d9257b5dd9f53de65991d58b0a2d7f7cf5b822207e5b1"
+  },
+  "state": "COMMITTED"
+}

@@ -262,7 +262,13 @@ def build_one_index(
             # fallback: hash de (label + text)
             doc_id = hashlib.sha1((str(label) + "\n" + str(text)).encode("utf-8")).hexdigest()
 
-        meta = {k: row.get(k) for k in schema.keep_fields}
+        # meta = {k: row.get(k) for k in schema.keep_fields}
+        if schema.keep_fields:
+            meta = {k: row.get(k) for k in schema.keep_fields}
+        else:
+            # garder tout le JSON tel quel
+            meta = dict(row)
+
         meta["doc_id"] = doc_id
         meta["subset"] = subset
         docs.append(meta)
@@ -327,6 +333,7 @@ def main():
     ap.add_argument("--text-field", default="positive")
     ap.add_argument("--label-field", default="term")
     ap.add_argument("--id-field", default="source_row_id")
+    ap.add_argument("--keep-fields", default="", help="liste CSV de champs à garder dans meta.jsonl. vide => garder tout")
     args = ap.parse_args()
 
     exp_root = Path("experiments") / args.exp_id
@@ -348,12 +355,22 @@ def main():
         # si le manifest n’a pas base_model_ref, fallback sur CLI
         models.append((model_id, base_ref or args.base_model_ref, adapter_dir))
 
+    # schema = UISchema(
+    #     query_field="query",
+    #     text_field=args.text_field,
+    #     label_field=args.label_field,
+    #     id_field=args.id_field,
+    #     keep_fields=["term", "query", "positive", "definition", "prompt", "pair_mode", "k", "source_row_id"],
+    # )
+
+    keep = [s.strip() for s in args.keep_fields.split(",") if s.strip()]
+
     schema = UISchema(
         query_field="query",
         text_field=args.text_field,
         label_field=args.label_field,
         id_field=args.id_field,
-        keep_fields=["term", "query", "positive", "definition", "prompt", "pair_mode", "k", "source_row_id"],
+        keep_fields=keep,  # vide => on gérera plus bas
     )
     build_cfg = BuildCfg(
         batch_size=args.batch_size,
