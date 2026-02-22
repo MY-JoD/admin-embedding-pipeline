@@ -1,0 +1,24 @@
+models:
+  merged_dir: "models/merged"
+  base_dir: "models/base"
+
+datasets_dir: "datasets"
+datasets_mode: "scan"        # "scan" = prend tous les .jsonl
+
+# champs dataset
+text_mode: "concat"          # "positive" ou "concat"
+text_fields:
+  anchor: "anchor"
+  positive: "positive"
+  pair_type: "pair_type"
+
+id_field: "row_index"        # si absent -> fallback index
+
+index_root: "indexes"
+device: "cpu"
+batch_size: 8
+max_length: 256
+
+faiss:
+  index_type: "flatip"
+  normalize: true

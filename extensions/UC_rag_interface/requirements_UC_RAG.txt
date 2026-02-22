@@ -1,0 +1,25 @@
+# Core dependencies
+pydantic==2.11.3
+langchain==0.3.27
+langchain-core==0.3.79
+langchain-community==0.3.31
+langchain-experimental==0.3.4
+langchain-huggingface==0.1.2
+langchain-ollama==0.2.3
+
+langchain-text-splitters
+
+# Machine learning
+sentence-transformers>=2.7.0
+faiss-cpu>=1.8.0
+pypdf>=4.2.0
+torch>=2.1.0
+
+# Streamlit
+streamlit>=1.37.0
+pyngrok>=5.3.0
+
+# PDF, Web URL
+pypdf
+beautifulsoup4
+requests

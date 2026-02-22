@@ -3,11 +3,17 @@
   "last_successful_run_by_exp": {
     "exp_0001_solon_pair": "run_0004_2026-01-28_095501",
     "exp_0002_solon_pair_train": "run_0003_2026-01-30_131239",
-    "exp_UI_0001_demo": "run_0003_2026-02-03_015328"
+    "exp_UI_0001_demo": "run_0003_2026-02-03_015328",
+    "exp_demo_edf": "run_0002_2026-02-16_080311",
+    "exp_demo_edf1": "run_0001_2026-02-16_084533",
+    "exp_demo_26": "run_0002_2026-02-22_161624"
   },
   "last_model_by_exp": {
     "exp_0002_solon_pair_train": "lora_run_0003_2026-01-30_131239",
-    "exp_UI_0001_demo": "lora_run_0003_2026-02-03_015328"
+    "exp_UI_0001_demo": "lora_run_0003_2026-02-03_015328",
+    "exp_demo_edf": "lora_run_0002_2026-02-16_080311",
+    "exp_demo_edf1": "lora_run_0001_2026-02-16_084533",
+    "exp_demo_26": "lora_run_0002_2026-02-22_161624"
   },
   "last_snapshot_by_exp": {}
 }

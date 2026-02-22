@@ -1,0 +1,13 @@
+storage_root: "models/base"
+models:
+  - id: "SOLON-embeddings-large-0.1"
+    repo_id: "OrdalieTech/Solon-embeddings-large-0.1"
+    revision: "2a0485d19ba44f5972e174c2355dc884bc73aeb1"
+    local_dir: "OrdalieTech__Solon-embeddings-large-0.1"
+    token: null
+
+  - id: "multilingual-e5-large-instruct"
+    repo_id: "intfloat/multilingual-e5-large-instruct"
+    revision: "1a50ec20f8e2fffa5fdc52d5c5c72e2911a66f7a"
+    local_dir: "intfloat__multilingual-e5-large-instruct"
+    token: null

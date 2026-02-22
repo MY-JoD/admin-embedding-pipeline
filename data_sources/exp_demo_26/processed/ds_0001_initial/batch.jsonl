@@ -1,0 +1,16 @@
+{"query": "SG", "positive": "Le SG est le Secrétariat général, structure de pilotage et de support d’un ministère (RH, finances, achats, SI, etc.)."}
+{"query": "DSI", "positive": "La DSI est la Direction des systèmes d’information, en charge de la stratégie, des services numériques et de leur maintien."}
+{"query": "DRH", "positive": "La DRH est la Direction des ressources humaines, responsable du pilotage des politiques RH et de l’administration du personnel."}
+{"query": "SIRH", "positive": "Le SIRH est le Système d’information des ressources humaines, regroupant outils et données pour les processus RH."}
+{"query": "PSSI", "positive": "La PSSI est la Politique de sécurité des systèmes d’information, document cadre définissant règles, responsabilités et exigences SSI."}
+{"query": "RSSI", "positive": "Le RSSI est le Responsable de la sécurité des systèmes d’information, chargé de piloter la SSI et la gestion des risques."}
+{"query": "SSI", "positive": "La SSI désigne la sécurité des systèmes d’information, c’est-à-dire l’ensemble des mesures protégeant SI, données et services."}
+{"query": "SI", "positive": "Le SI est le système d’information, ensemble des applications, infrastructures, données et processus numériques d’une organisation."}
+{"query": "gouvernance des systèmes d’information", "positive": "gouvernance des systèmes d’information : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "sécurité des systèmes d’information", "positive": "sécurité des systèmes d’information : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "politique de sécurité des systèmes d’information", "positive": "politique de sécurité des systèmes d’information : ensemble de règles, d’acteurs et de pratiques visant à encadrer et piloter une activité interne (SI, RH, achats) de manière cohérente et contrôlable."}
+{"query": "gestion des habilitations", "positive": "gestion des habilitations : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "gestion des accès", "positive": "gestion des accès : ensemble de règles, d’acteurs et de pratiques visant à encadrer et piloter une activité interne (SI, RH, achats) de manière cohérente et contrôlable."}
+{"query": "gestion des identités", "positive": "gestion des identités : démarche structurée utilisée pour organiser, sécuriser et suivre l’exécution des activités internes, avec des rôles, des procédures et des indicateurs."}
+{"query": "plan de continuité d’activité", "positive": "plan de continuité d’activité : notion de pilotage interne décrivant un cadre opérationnel ou de conformité (processus, contrôle, référentiel) applicable aux activités du ministère."}
+{"query": "plan de reprise d’activité", "positive": "plan de reprise d’activité : ensemble de règles, d’acteurs et de pratiques visant à encadrer et piloter une activité interne (SI, RH, achats) de manière cohérente et contrôlable."}
