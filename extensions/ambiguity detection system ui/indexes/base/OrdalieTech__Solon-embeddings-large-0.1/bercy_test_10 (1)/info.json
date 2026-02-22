@@ -1,0 +1,9 @@
+{
+  "scope": "base",
+  "model_id": "OrdalieTech__Solon-embeddings-large-0.1",
+  "dataset_id": "bercy_test_10 (1)",
+  "num_items": 468,
+  "embedding_dim": 1024,
+  "max_length": 256,
+  "text_mode": "concat"
+}

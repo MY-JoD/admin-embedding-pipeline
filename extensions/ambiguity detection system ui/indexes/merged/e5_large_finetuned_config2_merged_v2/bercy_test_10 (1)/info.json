@@ -1,0 +1,9 @@
+{
+  "scope": "merged",
+  "model_id": "e5_large_finetuned_config2_merged_v2",
+  "dataset_id": "bercy_test_10 (1)",
+  "num_items": 468,
+  "embedding_dim": 1024,
+  "max_length": 256,
+  "text_mode": "concat"
+}
